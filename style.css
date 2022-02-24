@@ -13,15 +13,24 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding: 0 20% 0 20%;
-    background-color: rgb(154, 218, 255);
+    background-image: url(imgs/pexels-fiona-art-3208282.jpg);
+    background-size: cover;
+    background-color: rgb(148, 230, 255);
+    color: white;
 }
 header h1 {
     margin: 2% 0;
 }
+
 header ul,
 footer ul {
+    margin: 0;
     display: flex;
     flex-direction: row;
+}
+
+footer ul {
+    justify-content: center;
 }
 
 header a,
@@ -44,13 +53,14 @@ header a:hover {
     transition: ease 0.3s;
 }
 
-footer ul {
-    justify-content: center;
-}
-
 footer a {
     text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
     color: black;
+    transition: ease 0.3s;
 }
 
 #buttom-footer {
@@ -59,11 +69,11 @@ footer a {
 }
 
 #main-content {
-    margin: 3% 20% 8% 20%;
+    margin: 2% 20% 8% 20%;
 }
 
 #main-content .titlebar {
-    margin: 1% 0;
+    margin: 2% 0;
     padding: 0 2%;
     background-color: rgb(190, 216, 255);
 }
@@ -74,24 +84,17 @@ footer a {
     padding: 0 2%;
 }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-    display: flexbox;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.block {
-    height: 300px;
-    width: 300px;
-    background: #f47937;
-    margin-bottom: 20px;
-    background-repeat: no-repeat;
-}
-
 #personal-photo img {
     float: right;
     width: 150px;
     border-radius: 100%;
+}
+
+ul {
+    margin: 0 4%;
+}
+
+.img-show{
+    display: flex;
+    justify-content: center;
 }
