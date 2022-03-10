@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(148, 230, 255,0.7), rgba(255, 181, 181,0.7));
 }
 
 header,
@@ -13,11 +14,14 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding: 0 20% 0 20%;
-    background-image: url(imgs/pexels-fiona-art-3208282.jpg);
+    background-image: linear-gradient(rgba(255, 181, 181,0.7),rgba(148, 230, 255,0.7)),url(imgs/pexels-fiona-art-3208282.jpg);
     background-size: cover;
-    background-color: rgb(148, 230, 255);
-    color: white;
+    background-color: linear-gradient(rgba(255, 181, 181,0.7),rgba(148, 230, 255,0.7));
+    color: black;
 }
+
+
+
 header h1 {
     margin: 2% 0;
 }
@@ -55,11 +59,11 @@ header a:hover {
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 footer a:hover {
-    color: black;
+    color: white;
     transition: ease 0.3s;
 }
 
