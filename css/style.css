@@ -1,11 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
     background-color: rgb(255, 255, 255);
-    background-image: linear-gradient(rgba(148, 230, 255,0.7), rgba(255, 181, 181,0.7));
+
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* background-image: linear-gradient(rgba(148, 230, 255,0.7), rgba(255, 181, 181,0.7)); */
+
 }
 
 header,
@@ -14,7 +19,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding: 0 20% 0 20%;
-    background-image: linear-gradient(rgba(255, 181, 181,0.7),rgba(148, 230, 255,0.7)),url(../imgs/pexels-fiona-art-3208282.jpg);
+    /* background-image: linear-gradient(rgba(255, 181, 181,0.7),rgba(148, 230, 255,0.7)); */
     background-size: cover;
     color: black;
 }
@@ -41,7 +46,7 @@ footer a {
     list-style: none;
     text-decoration: none;
     padding: 5px 2%;
-    margin: 0 1%;
+    margin: 0 2% 0 0;
 }
 
 header a {
