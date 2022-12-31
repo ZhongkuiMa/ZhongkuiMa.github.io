@@ -54,7 +54,8 @@ header a {
 }
 
 header a:hover {
-    transition: ease 0.3s;
+    transition: ease 1s;
+    animation: rotatemove 1s linear;
     color: black;
     background-color: white;
 }
@@ -104,4 +105,17 @@ ul {
 .img-show {
     display: flex;
     justify-content: center;
+}
+
+@keyframes rotatemove {
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+@-webkit-keyframes rotatemove {
+    100% {
+        transform: rotate(10deg);
+    }
+
 }
