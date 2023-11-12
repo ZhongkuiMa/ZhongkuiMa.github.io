@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Personal Website | Zhongkui Ma</title>
+
+    <!--javascript files-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script-head.js"></script>
+</head>
+
+<body>
+
+<header id="page-header"></header>
+
+<div id="main-content">
+    <div class="titlebar">
+        <h2> ReLU Hull Approximation </h2>
+    </div>
+
+    <p><b>Profile Creator</b>: Zhongkui Ma </p>
+    <p><b>Paper Authors</b>: Zhongkui Ma, Jiaying Li, Guangdong Bai</p>
+
+
+    <h3> Before Reading </h3>
+    <p>
+        This profile aims to help you quickly understand our paper.
+        So we will skip the background of neural network verification and several basic concepts.
+        Before read this article, we suppose you have a basic understanding of neural networks and computational
+        geometry.
+    </p>
+    <p>
+        You need to learn about the following basic concepts:
+        <a href="https://en.wikipedia.org/wiki/Neural_network"> neural network</a>,
+        <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)"> ReLU function</a>,
+        <a href="https://en.wikipedia.org/wiki/Polytope"> polytope</a> (by default we mean convex polytope),
+        <a href="https://en.wikipedia.org/wiki/Face_(geometry)"> k-face</a>,
+        <a href="https://en.wikipedia.org/wiki/Convex_hull"> convex hull</a>,
+        <a href="https://en.wikipedia.org/wiki/Linear_programming"> linear programming</a>.
+        You need to know the H-representation and V-representation of polytope, which define a polytope by halfspaces
+        (linear constraints) or vertices.
+    </p>
+
+    <div class="titlebar">
+        <h3> Background </h3>
+    </div>
+
+    <h3> What is neural network verification? </h3>
+    <p>
+        Neural network verification is a process of proving the correctness of neural networks, i.e., the output of the
+        neural network is always correct.
+        For example, we want a sample with tiny perturbation to be classified as the same class as the original sample;
+        we call a sample with tiny perturbation an <i>adversarial sample</i> if it is classified as a different class.
+        This property is called <i>local robustness</i>.
+    </p>
+    <p>
+        There are too many possible perturbation, and we cannot enumerate all of them.
+        Neural network verification use mathematical methods to resolve this problem.
+        The core idea is to obtain the range of output with given input range.
+    </p>
+
+    <h3> Neural network => Linear constraints </h3>
+    <p>
+        <b> Calculate the output range is hard due to non-linear activation functions.</b>
+        Neural network is a comlicated composite function, having linear and non-linear functions.
+        This unlinear activation makes a neural network become a universal function approximator, simultaneously, it
+        brings difficulties to neural network verification.
+    </p>
+    <p>
+        <b>Relax non-linear activation functions to linear constraints.</b>
+        Replacing the non-linear activation function with linear constraints is a popular method.
+        By now, linear transformation directly becomes linear constraints (linear equalities), and non-linear activation
+        function also becomes linear constraints (several linear inequalities).
+        In this process, the linear inequalities consider extra value-pairs of input and output, resulting in a loss of
+        exactness.
+        However, this method cover all possible value-pairs of input and output, and it is a good
+        <i>over-approximation</i>, which is called <i>soundness</i>.
+    </p>
+    <p>
+        Up to now, we have converted a neural network to linear constraints.
+        And there are many methods about linear constraints, such as linear programming, polytope, etc.
+        Furthermore, how to construct these linear constraints is a problem because different linear constraints results
+        in different over-approximation.
+    </p>
+
+    <h3> Verifying neural network => Solving linear programming problem </h3>
+    <p>
+        After converting the neural network to a set of linear constraints involved with each variable in the network,
+        those properties can be transformed to linear constraints can be verified by solving a linear programming.
+        For example, we want to verify y1 > y2, where y1 and y2 are two outputs of the neural network.
+    </p>
+
+    <div class="titlebar">
+        <h3> Problem </h3>
+    </div>
+
+    <h3> Linear constraints for function => Convex hull of function</h3>
+    <p>
+        A set of linear constraints defines a convex polytope.
+        The minimal convex polytope contains the image (the set of all value-pairs) of the non-linear function is the
+        best choice because it contains the fewest unnecessary points.
+        We call this minimal convex polytope <i>convex hull</i> of the function.
+        In particular, the convex hull of ReLU function is called <i>ReLU hull</i>.
+    </p>
+
+    <p>
+        The 1d case is simple, because we only need to consider y=ReLU(x) in the 2d (x,y)-space.
+        The difficult part is the multi-dimension case, because we need to consider the convex hull of ReLU function in
+        the high-dimension space, which comes from the high-dimension and interrelated input and output of neural
+        networks.
+    </p>
+
+    <h3>Over approximating ReLU hull</h3>
+    <p>
+        It is hard to compute the exact convex hull.
+        Moreover, by computational geometry, a polytope may have an exponential number of vertices or faces regarding
+        the dimension.
+        Instead of computing the convex hull, we construct a convex polytope to over-approximate the convex hull.
+        Obviously, it brings many benefits, such as less computation, less memory, etc.
+    </p>
+
+    <div class="titlebar">
+        <h3> WraLU </h3>
+    </div>
+    <p> WraLU means Wrapping the ReLU function. We will
+        <i> construct a set of faces to wrap the ReLU function </i>,
+        which is our insight. Noted that the ReLU function is a linear piece-wise function, and we can use these linear
+        pieces as
+        faces.</p>
+
+
+    <h3> Running Example </h3>
+
+
+    <img alt="two lower faces" height="400" src="imgs/24popl_relu_hull/paper11.png" width="400">
+    <img alt="upper face identification" height="400" src="imgs/24popl_relu_hull/paper12.png" width="400">
+    <img alt="relu hull" height="400" src="imgs/24popl_relu_hull/paper13.png" width="400">
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
