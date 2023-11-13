@@ -35,6 +35,7 @@
         <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)"> ReLU function</a>,
         <a href="https://en.wikipedia.org/wiki/Polytope"> polytope</a> (by default we mean convex polytope),
         <a href="https://en.wikipedia.org/wiki/Face_(geometry)"> k-face</a>,
+        <a href="https://en.wikipedia.org/wiki/Supporting_hyperplane">supporting plane</a>
         <a href="https://en.wikipedia.org/wiki/Convex_hull"> convex hull</a>,
         <a href="https://en.wikipedia.org/wiki/Linear_programming"> linear programming</a>.
         You need to know the H-representation and V-representation of polytope, which define a polytope by halfspaces
@@ -131,11 +132,88 @@
 
     <h3> Running Example </h3>
 
+    <p>
+        We use a simple example with four variables x1, x2, y1 = ReLU(x1), y2 = ReLU(x2).
+        Because we only can visulize 3d space, we use the 3d (x1,x2,y1)-space as an example.
+        WraLU process each output variable iteratively, and the case of y2 is similar.
+    </p>
+    <p>
+        <b>Input polytope X</b>.
+        The input polytope X is defined by the linear constraints of x1 and x2 in the 2d (x1,x2)-space.
+        Specifically, X = {(x1,x2) | x1+x2&ge;-2, x1-x2&ge;-2, -x1+x2&ge;-2, -x1-x2&ge;-2, -x2&ge;-1.2}.
+    </p>
+
+    <h3> Step 1: Construct two lower faces. </h3>
+    <p>
+        By y1 = ReLU(x1), we obtain two linear piece (dark green) by P1 = X&cap;{y1 = x1} and P2 = X&cap;{y1 = x1} as
+        shown in Figure 1.
+    </p>
 
     <img alt="two lower faces" height="400" src="imgs/24popl_relu_hull/paper11.png" width="400">
-    <img alt="upper face identification" height="400" src="imgs/24popl_relu_hull/paper12.png" width="400">
-    <img alt="relu hull" height="400" src="imgs/24popl_relu_hull/paper13.png" width="400">
+    <p> Figure 1: Input polytope X and union of two lower faces of P1 = X&cap;{y1 = x1} and P2 = X&cap;{y1 = x1}. </p>
 
+    <h3> Step 2: Determining open edges of lower faces. </h3>
+    <p>
+        The open edges of the lower faces are transformed the edges from the input polytope X, which are the common
+        edges shared by the lower face and the upper face.
+        The close edge is an edge shared by two lower faces, which is X&cap;{x1=0}.
+    </p>
+
+    <h3> Step 3: Identifying vertices of ReLU Hull </h3>
+    <p>
+        Note that the vertices of these two linear pieces are important, because they are the vertices of the ReLU hull
+        and will be used to determine the upper faces in the following steps.
+        But not all vertices are necessary to determine the upper faces and only the blue vertices are necessary.
+    </p>
+
+    <h4> Step 4: Pinpointing supporting planes of faces. </h4>
+    <p>
+        After having the open edges from Step 2 and vertices from Step3, we can determine the supporting planes of
+        faces.
+        We iteratively determine the supporting planes of faces by the open edges and vertices and choose the best
+        supporting plane (Figure 2).
+        The best supporting plane is the plane that does not halve the vertices; otherwise, the resulting polytope
+        determined by lower and upper faces will not over-approximate the ReLU hull.
+    </p>
+    <p>
+        Specifically, we construct a parametric function with &beta; to represent the supporting plane that crossing an
+        open edge.
+        Different values of &beta; determined by different vertices represent different supporting planes.
+    </p>
+
+    <img alt="upper face identification" height="400" src="imgs/24popl_relu_hull/paper12.png" width="400">
+    <p> Figure 2: An illustration of Step 4: determining a supporting plane by one open edge and vertices. </p>
+
+    <h3> Step 5: Constructing upper face. </h3>
+    <p>
+        Actually, we just need to know the linear constraints of the upper faces.
+        In Step 4, we have obtained the supporting planes of upper faces, and we can obtain the linear constraints of
+        the
+        upper faces by making the origin satisfy the constraints.
+        For example, the supporting plane in Figure 2 is 2+x1+x2=2y1 and we substitute (0,0,0) to obtain the linear
+        constraint 2&ge;0, and then 2+x1+x2&ge;2y1 is the linear constraint of the upper face.
+        For analogy, we can obtain the linear constraints of all the upper faces.
+    </p>
+    <p>
+        Finally, we have M1={y1&ge;0, y1&ge;x1, 2+x1+x2&ge;2y1, 2+x1-x2&ge;2y1, 1.2 - x2&ge;0}. Note that this result
+        has removed the repeated ones obtained from the same supporting plane.
+    </p>
+    <img alt="relu hull" height="400" src="imgs/24popl_relu_hull/paper13.png" width="400">
+    <p> Figure 3: ReLU hull projected in (x1,x2,y1)-space </p>
+
+    <div class="titlebar">
+        <h3> Further Reading </h3>
+    </div>
+    <p>
+        The insight of our work comes from a classical convex hull algorithm,
+        <a href="https://en.wikipedia.org/wiki/Gift_wrapping_algorithm"> <i>gift wrapping algorithm</i></a>.
+        It has a high dimensional version, but the case in 2d plane is famous.
+        Although we extract the insight from the gift wrapping algorithm, the WraLU algorithm is different from the gift
+        wrapping algorithm.
+        We utilize the unique property of ReLU function to construct the ReLU hull, which brings a new insight to the
+        convex and linear-pieces functions.
+        Also, the unique property of ReLU hull bring high efficiency to WraLU.
+    </p>
 </div>
 
 <script src="js/script.js"></script>
