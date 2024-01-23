@@ -29,18 +29,18 @@
         Before read this article, we suppose you have a basic understanding of neural networks and computational
         geometry.
     </p>
-    <p>
-        You need to learn about the following basic concepts:
-        <a href="https://en.wikipedia.org/wiki/Neural_network"> neural network</a>,
-        <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)"> ReLU function</a>,
-        <a href="https://en.wikipedia.org/wiki/Polytope"> polytope</a> (by default we mean convex polytope),
-        <a href="https://en.wikipedia.org/wiki/Face_(geometry)"> k-face</a>,
-        <a href="https://en.wikipedia.org/wiki/Supporting_hyperplane">supporting plane</a>
-        <a href="https://en.wikipedia.org/wiki/Convex_hull"> convex hull</a>,
-        <a href="https://en.wikipedia.org/wiki/Linear_programming"> linear programming</a>.
-        You need to know the H-representation and V-representation of polytope, which define a polytope by halfspaces
-        (linear constraints) or vertices.
-    </p>
+    <p>You need to learn about the following basic concepts:</p>
+
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Neural_network"> neural network</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)"> ReLU function</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Polytope"> polytope</a> (by default we mean convex polytope)</li>
+        <li><a href="https://en.wikipedia.org/wiki/Face_(geometry)"> k-face</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Supporting_hyperplane">supporting plane</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Convex_hull"> convex hull</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Linear_programming"> linear programming</a></li>
+    </ul>
+
 
     <div class="titlebar">
         <h3> Background </h3>
@@ -50,24 +50,21 @@
     <p>
         Neural network verification is a process of proving the correctness of neural networks, i.e., the output of the
         neural network is always correct.
-        For example, we want a sample with tiny perturbation to be classified as the same class as the original sample;
-        we call a sample with tiny perturbation an <i>adversarial sample</i> if it is classified as a different class.
-        This property is called <i>local robustness</i>.
+        For example, we want a sample with a tiny perturbation to be classified as the same class as the original
+        sample, which is called <i>local robustness</i>; we call a sample with a tiny perturbation an <i>adversarial
+        sample</i> if it is classified as a different class.
     </p>
     <p>
-        There are too many possible perturbation, and we cannot enumerate all of them.
-        Neural network verification use mathematical methods to resolve this problem.
-        The core idea is to obtain the range of output with given input range.
+        There are too many possible perturbations, and we cannot enumerate all of them.
+        Neural network verification uses mathematical methods to resolve this problem.
+        The core idea is to obtain the range of output with a given input range.
     </p>
-
-    <img alt="overview" height="400" src="imgs/24popl_relu_hull/overview.png" width="800">
-    <p> Figure: Overview of verifying neural networks by solving linear programming problem </p>
 
     <h3> Neural network => Linear constraints </h3>
     <p>
-        <b> Calculate the output range is hard due to non-linear activation functions.</b>
-        Neural network is a comlicated composite function, having linear and non-linear functions.
-        This unlinear activation makes a neural network become a universal function approximator, simultaneously, it
+        <b> Calculating the output range is hard due to non-linear activation functions.</b>
+        Neural network is a complicated composite function, having linear and non-linear functions.
+        These non-linear activations make a neural network become a universal function approximator, simultaneously, it
         brings difficulties to neural network verification.
     </p>
     <p>
@@ -77,7 +74,7 @@
         function also becomes linear constraints (several linear inequalities).
         In this process, the linear inequalities consider extra value-pairs of input and output, resulting in a loss of
         exactness.
-        However, this method cover all possible value-pairs of input and output, and it is a good
+        However, this method covers all possible value-pairs of input and output, and it is a good
         <i>over-approximation</i>, which is called <i>soundness</i>.
     </p>
     <p>
