@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -100,6 +99,10 @@ footer a:hover {
 
 ul {
     margin: 0 4%;
+}
+
+li {
+    margin: 0.5em 0;
 }
 
 .img-show {
