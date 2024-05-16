@@ -26,7 +26,7 @@
     <p>
         This profile aims to help you quickly understand our paper.
         So we will skip the background of neural network verification and several basic concepts.
-        Before read this article, we suppose you have a basic understanding of neural networks and computational
+        Before reading this article, we suppose you have a basic understanding of neural networks and computational
         geometry.
     </p>
     <p>You need to learn about the following basic concepts:</p>
@@ -63,14 +63,14 @@
     <h3> Neural network => Linear constraints </h3>
     <p>
         <b> Calculating the output range is hard due to non-linear activation functions.</b>
-        Neural network is a complicated composite function, having linear and non-linear functions.
+        A neural network is a complicated composite function, having linear and non-linear functions.
         These non-linear activations make a neural network become a universal function approximator, simultaneously, it
         brings difficulties to neural network verification.
     </p>
     <p>
         <b>Relax non-linear activation functions to linear constraints.</b>
         Replacing the non-linear activation function with linear constraints is a popular method.
-        By now, linear transformation directly becomes linear constraints (linear equalities), and non-linear activation
+        By now, linear transformation directly becomes linear constraints (linear equalities), and the non-linear activation
         function also becomes linear constraints (several linear inequalities).
         In this process, the linear inequalities consider extra value-pairs of input and output, resulting in a loss of
         exactness.
@@ -79,15 +79,15 @@
     </p>
     <p>
         Up to now, we have converted a neural network to linear constraints.
-        And there are many methods about linear constraints, such as linear programming, polytope, etc.
-        Furthermore, how to construct these linear constraints is a problem because different linear constraints results
-        in different over-approximation.
+        There are many methods for linear constraints, such as linear programming, polytope, etc.
+        Furthermore, how to construct these linear constraints is a problem because different linear constraints result
+        in different over-approximations.
     </p>
 
     <h3> Verifying neural network => Solving linear programming problem </h3>
     <p>
         After converting the neural network to a set of linear constraints involved with each variable in the network,
-        those properties can be transformed to linear constraints can be verified by solving a linear programming.
+        those properties can be transformed into linear constraints and can be verified by solving linear programming.
         For example, we want to verify y1 > y2, where y1 and y2 are two outputs of the neural network.
     </p>
 
@@ -105,8 +105,8 @@
     </p>
 
     <p>
-        The 1d case is simple, because we only need to consider y=ReLU(x) in the 2d (x,y)-space.
-        The difficult part is the multi-dimension case, because we need to consider the convex hull of ReLU function in
+        The 1d case is simple because we only need to consider y=ReLU(x) in the 2d (x,y)-space.
+        The difficult part is the multi-dimension case because we need to consider the convex hull of the ReLU function in
         the high-dimension space, which comes from the high-dimension and interrelated input and output of neural
         networks.
     </p>
@@ -125,7 +125,7 @@
     </div>
     <p> WraLU means Wrapping the ReLU function. We will
         <i> construct a set of faces to wrap the ReLU function </i>,
-        which is our insight. Noted that the ReLU function is a linear piece-wise function, and we can use these linear
+        which is our insight. Note that the ReLU function is a linear piece-wise function, and we can use these linear
         pieces as
         faces.</p>
 
@@ -134,8 +134,8 @@
 
     <p>
         We use a simple example with four variables x1, x2, y1 = ReLU(x1), y2 = ReLU(x2).
-        Because we only can visulize 3d space, we use the 3d (x1,x2,y1)-space as an example.
-        WraLU process each output variable iteratively, and the case of y2 is similar.
+        Because we only can visualize 3d space, we use the 3d (x1,x2,y1)-space as an example.
+        WraLU processes each output variable iteratively, and the case of y2 is similar.
     </p>
     <p>
         <b>Input polytope X</b>.
@@ -145,7 +145,7 @@
 
     <h3> Step 1: Construct two lower faces. </h3>
     <p>
-        By y1 = ReLU(x1), we obtain two linear piece (dark green) by P1 = X&cap;{y1 = x1} and P2 = X&cap;{y1 = x1} as
+        By y1 = ReLU(x1), we obtain two linear pieces (dark green) by P1 = X&cap;{y1 = x1} and P2 = X&cap;{y1 = x1} as
         shown in Figure 1.
     </p>
 
@@ -154,14 +154,14 @@
 
     <h3> Step 2: Determining open edges of lower faces. </h3>
     <p>
-        The open edges of the lower faces are transformed the edges from the input polytope X, which are the common
+        The open edges of the lower faces are transformed into the edges from the input polytope X, which are the common
         edges shared by the lower face and the upper face.
         The close edge is an edge shared by two lower faces, which is X&cap;{x1=0}.
     </p>
 
     <h3> Step 3: Identifying vertices of ReLU Hull </h3>
     <p>
-        Note that the vertices of these two linear pieces are important, because they are the vertices of the ReLU hull
+        Note that the vertices of these two linear pieces are important because they are the vertices of the ReLU hull
         and will be used to determine the upper faces in the following steps.
         But not all vertices are necessary to determine the upper faces and only the blue vertices are necessary.
     </p>
@@ -176,7 +176,7 @@
         determined by lower and upper faces will not over-approximate the ReLU hull.
     </p>
     <p>
-        Specifically, we construct a parametric function with &beta; to represent the supporting plane that crossing an
+        Specifically, we construct a parametric function with &beta; to represent the supporting plane that crosses an
         open edge.
         Different values of &beta; determined by different vertices represent different supporting planes.
     </p>
@@ -192,7 +192,7 @@
         upper faces by making the origin satisfy the constraints.
         For example, the supporting plane in Figure 2 is 2+x1+x2=2y1 and we substitute (0,0,0) to obtain the linear
         constraint 2&ge;0, and then 2+x1+x2&ge;2y1 is the linear constraint of the upper face.
-        For analogy, we can obtain the linear constraints of all the upper faces.
+        For an analogy, we can obtain the linear constraints of all the upper faces.
     </p>
     <p>
         Finally, we have M1={y1&ge;0, y1&ge;x1, 2+x1+x2&ge;2y1, 2+x1-x2&ge;2y1, 1.2 - x2&ge;0}. Note that this result
@@ -207,12 +207,11 @@
     <p>
         The insight of our work comes from a classical convex hull algorithm,
         <a href="https://en.wikipedia.org/wiki/Gift_wrapping_algorithm"> <i>gift wrapping algorithm</i></a>.
-        It has a high dimensional version, but the case in 2d plane is famous.
-        Although we extract the insight from the gift wrapping algorithm, the WraLU algorithm is different from the gift
-        wrapping algorithm.
-        We utilize the unique property of ReLU function to construct the ReLU hull, which brings a new insight to the
+        It has a high-dimensional version, but the case in the 2d plane is famous.
+        Although we extract the insight from the gift-wrapping algorithm, the WraLU algorithm is different from the gift-wrapping algorithm.
+        We utilize the unique property of the ReLU function to construct the ReLU hull, which brings new insight into the
         convex and linear-pieces functions.
-        Also, the unique property of ReLU hull bring high efficiency to WraLU.
+        Also, the unique property of the ReLU hull brings high efficiency to WraLU.
     </p>
 </div>
 
