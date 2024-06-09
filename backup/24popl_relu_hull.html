@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Personal Website | Zhongkui Ma</title>
+
+    <!--javascript files-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script-head.js"></script>
+</head>
+
+<body>
+
+<header id="page-header"></header>
+
+<div id="main-content">
+    <div class="titlebar">
+        <h2> ReLU Hull Approximation </h2>
+    </div>
+
+    <p><b>Profile Creator</b>: Zhongkui Ma </p>
+    <p><b>Paper Authors</b>: Zhongkui Ma, Jiaying Li, Guangdong Bai</p>
+
+
+    <h3> Before Reading </h3>
+    <p>
+        This profile aims to help you quickly understand our paper.
+        So we will skip the background of neural network verification and several basic concepts.
+        Before reading this article, we suppose you have a basic understanding of neural networks and computational
+        geometry.
+    </p>
+    <p>You need to learn about the following basic concepts:</p>
+
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Neural_network"> neural network</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)"> ReLU function</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Polytope"> polytope</a> (by default we mean convex polytope)</li>
+        <li><a href="https://en.wikipedia.org/wiki/Face_(geometry)"> k-face</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Supporting_hyperplane">supporting plane</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Convex_hull"> convex hull</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Linear_programming"> linear programming</a></li>
+    </ul>
+
+
+    <div class="titlebar">
+        <h3> Background </h3>
+    </div>
+
+    <h3> What is neural network verification? </h3>
+    <p>
+        Neural network verification is a process of proving the correctness of neural networks, i.e., the output of the
+        neural network is always correct.
+        For example, we want a sample with a tiny perturbation to be classified as the same class as the original
+        sample, which is called <i>local robustness</i>; we call a sample with a tiny perturbation an <i>adversarial
+        sample</i> if it is classified as a different class.
+    </p>
+    <p>
+        There are too many possible perturbations, and we cannot enumerate all of them.
+        Neural network verification uses mathematical methods to resolve this problem.
+        The core idea is to obtain the range of output with a given input range.
+    </p>
+
+    <h3> Neural network => Linear constraints </h3>
+    <p>
+        <b> Calculating the output range is hard due to non-linear activation functions.</b>
+        A neural network is a complicated composite function, having linear and non-linear functions.
+        These non-linear activations make a neural network become a universal function approximator, simultaneously, it
+        brings difficulties to neural network verification.
+    </p>
+    <p>
+        <b>Relax non-linear activation functions to linear constraints.</b>
+        Replacing the non-linear activation function with linear constraints is a popular method.
+        By now, linear transformation directly becomes linear constraints (linear equalities), and the non-linear activation
+        function also becomes linear constraints (several linear inequalities).
+        In this process, the linear inequalities consider extra value-pairs of input and output, resulting in a loss of
+        exactness.
+        However, this method covers all possible value-pairs of input and output, and it is a good
+        <i>over-approximation</i>, which is called <i>soundness</i>.
+    </p>
+    <p>
+        Up to now, we have converted a neural network to linear constraints.
+        There are many methods for linear constraints, such as linear programming, polytope, etc.
+        Furthermore, how to construct these linear constraints is a problem because different linear constraints result
+        in different over-approximations.
+    </p>
+
+    <h3> Verifying neural network => Solving linear programming problem </h3>
+    <p>
+        After converting the neural network to a set of linear constraints involved with each variable in the network,
+        those properties can be transformed into linear constraints and can be verified by solving linear programming.
+        For example, we want to verify y1 > y2, where y1 and y2 are two outputs of the neural network.
+    </p>
+
+    <div class="titlebar">
+        <h3> Problem </h3>
+    </div>
+
+    <h3> Linear constraints for function => Convex hull of function</h3>
+    <p>
+        A set of linear constraints defines a convex polytope.
+        The minimal convex polytope contains the image (the set of all value-pairs) of the non-linear function is the
+        best choice because it contains the fewest unnecessary points.
+        We call this minimal convex polytope <i>convex hull</i> of the function.
+        In particular, the convex hull of ReLU function is called <i>ReLU hull</i>.
+    </p>
+
+    <p>
+        The 1d case is simple because we only need to consider y=ReLU(x) in the 2d (x,y)-space.
+        The difficult part is the multi-dimension case because we need to consider the convex hull of the ReLU function in
+        the high-dimension space, which comes from the high-dimension and interrelated input and output of neural
+        networks.
+    </p>
+
+    <h3>Over approximating ReLU hull</h3>
+    <p>
+        It is hard to compute the exact convex hull.
+        Moreover, by computational geometry, a polytope may have an exponential number of vertices or faces regarding
+        the dimension.
+        Instead of computing the convex hull, we construct a convex polytope to over-approximate the convex hull.
+        Obviously, it brings many benefits, such as less computation, less memory, etc.
+    </p>
+
+    <div class="titlebar">
+        <h3> WraLU </h3>
+    </div>
+    <p> WraLU means Wrapping the ReLU function. We will
+        <i> construct a set of faces to wrap the ReLU function </i>,
+        which is our insight. Note that the ReLU function is a linear piece-wise function, and we can use these linear
+        pieces as
+        faces.</p>
+
+
+    <h3> Running Example </h3>
+
+    <p>
+        We use a simple example with four variables x1, x2, y1 = ReLU(x1), y2 = ReLU(x2).
+        Because we only can visualize 3d space, we use the 3d (x1,x2,y1)-space as an example.
+        WraLU processes each output variable iteratively, and the case of y2 is similar.
+    </p>
+    <p>
+        <b>Input polytope X</b>.
+        The input polytope X is defined by the linear constraints of x1 and x2 in the 2d (x1,x2)-space.
+        Specifically, X = {(x1,x2) | x1+x2&ge;-2, x1-x2&ge;-2, -x1+x2&ge;-2, -x1-x2&ge;-2, -x2&ge;-1.2}.
+    </p>
+
+    <h3> Step 1: Construct two lower faces. </h3>
+    <p>
+        By y1 = ReLU(x1), we obtain two linear pieces (dark green) by P1 = X&cap;{y1 = x1} and P2 = X&cap;{y1 = x1} as
+        shown in Figure 1.
+    </p>
+
+    <img alt="two lower faces" height="400" src="imgs/24popl_relu_hull/paper11.png" width="400">
+    <p> Figure 1: Input polytope X and union of two lower faces of P1 = X&cap;{y1 = x1} and P2 = X&cap;{y1 = x1}. </p>
+
+    <h3> Step 2: Determining open edges of lower faces. </h3>
+    <p>
+        The open edges of the lower faces are transformed into the edges from the input polytope X, which are the common
+        edges shared by the lower face and the upper face.
+        The close edge is an edge shared by two lower faces, which is X&cap;{x1=0}.
+    </p>
+
+    <h3> Step 3: Identifying vertices of ReLU Hull </h3>
+    <p>
+        Note that the vertices of these two linear pieces are important because they are the vertices of the ReLU hull
+        and will be used to determine the upper faces in the following steps.
+        But not all vertices are necessary to determine the upper faces and only the blue vertices are necessary.
+    </p>
+
+    <h4> Step 4: Pinpointing supporting planes of faces. </h4>
+    <p>
+        After having the open edges from Step 2 and vertices from Step3, we can determine the supporting planes of
+        faces.
+        We iteratively determine the supporting planes of faces by the open edges and vertices and choose the best
+        supporting plane (Figure 2).
+        The best supporting plane is the plane that does not halve the vertices; otherwise, the resulting polytope
+        determined by lower and upper faces will not over-approximate the ReLU hull.
+    </p>
+    <p>
+        Specifically, we construct a parametric function with &beta; to represent the supporting plane that crosses an
+        open edge.
+        Different values of &beta; determined by different vertices represent different supporting planes.
+    </p>
+
+    <img alt="upper face identification" height="400" src="imgs/24popl_relu_hull/paper12.png" width="400">
+    <p> Figure 2: An illustration of Step 4: determining a supporting plane by one open edge and vertices. </p>
+
+    <h3> Step 5: Constructing upper face. </h3>
+    <p>
+        Actually, we just need to know the linear constraints of the upper faces.
+        In Step 4, we have obtained the supporting planes of upper faces, and we can obtain the linear constraints of
+        the
+        upper faces by making the origin satisfy the constraints.
+        For example, the supporting plane in Figure 2 is 2+x1+x2=2y1 and we substitute (0,0,0) to obtain the linear
+        constraint 2&ge;0, and then 2+x1+x2&ge;2y1 is the linear constraint of the upper face.
+        For an analogy, we can obtain the linear constraints of all the upper faces.
+    </p>
+    <p>
+        Finally, we have M1={y1&ge;0, y1&ge;x1, 2+x1+x2&ge;2y1, 2+x1-x2&ge;2y1, 1.2 - x2&ge;0}. Note that this result
+        has removed the repeated ones obtained from the same supporting plane.
+    </p>
+    <img alt="relu hull" height="400" src="imgs/24popl_relu_hull/paper13.png" width="400">
+    <p> Figure 3: ReLU hull projected in (x1,x2,y1)-space </p>
+
+    <div class="titlebar">
+        <h3> Further Reading </h3>
+    </div>
+    <p>
+        The insight of our work comes from a classical convex hull algorithm,
+        <a href="https://en.wikipedia.org/wiki/Gift_wrapping_algorithm"> <i>gift wrapping algorithm</i></a>.
+        It has a high-dimensional version, but the case in the 2d plane is famous.
+        Although we extract the insight from the gift-wrapping algorithm, the WraLU algorithm is different from the gift-wrapping algorithm.
+        We utilize the unique property of the ReLU function to construct the ReLU hull, which brings new insight into the
+        convex and linear-pieces functions.
+        Also, the unique property of the ReLU hull brings high efficiency to WraLU.
+    </p>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
