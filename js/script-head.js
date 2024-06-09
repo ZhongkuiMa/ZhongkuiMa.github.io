@@ -6,7 +6,7 @@ head = $("head");
 
 head.append('<meta name="keywords" content="Zhongkui Ma" />');
 head.append(
-    '<meta name="description" ' + 'content="This is personal website." />'
+    '<meta name="description" ' + 'content="Personal website." />'
 );
 
 head.append("<!--default link-->");
