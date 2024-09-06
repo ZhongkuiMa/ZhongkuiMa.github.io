@@ -6,7 +6,7 @@
 About
 ======
 
-I'm Zhongkui Ma.
+This is Zhongkui Ma's website.
 
 I'm a PhD student at
 `the University of Queensland <https://www.uq.edu.au/>`_ (UQ).
