@@ -4,14 +4,14 @@ Activities
 Invited Talks
 -------------
 
-[2024.5]
+[May. 2024]
 
     "*ReLU Hull Approximation*" in the workshop
     *Formal Methods in Australia and New Zealand*
     at the University of Queensland, St Lucia, Australia,
     at 15:30-16:00 on 30 May 2024.
 
-[2024.5]
+[May. 2024]
 
     "*ReLU Hull Approximation*" in
     `FPench community monthly meeting <https://fpbench.org/>`_
@@ -20,7 +20,7 @@ Invited Talks
 Community Work
 ----------------
 
-[2024.1]
+[Jan. 2024]
 
     I served
     `the 45th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'24) <https://pldi24.sigplan.org/>`_
@@ -29,7 +29,7 @@ Community Work
 Tutor Work
 ----------
 
-[2024.7 - 2024.12]
+[Semester 2, 2024 at the University of Queensland]
 
     CSSE7160: `Concurrency: Theory and Practice <https://my.uq.edu
     .au/programs-courses/course.html?course_code=CSSE7610&offer=53544c554332494e>`__
@@ -37,7 +37,7 @@ Tutor Work
     Semester 2, 2024.
     (Taught by A/Prof. `Guangdong Bai <https://baigd.github.io/>`_)
 
-[2023.7 - 2023.12]
+[Semester 2, 2023 at the University of Queensland]
 
     CSSE7160: `Concurrency: Theory and Practice <https://my.uq.edu
     .au/programs-courses/course.html?course_code=CSSE7610&offer=53544c554332494e&year=2023>`__

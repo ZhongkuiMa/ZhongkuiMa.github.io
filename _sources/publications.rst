@@ -13,7 +13,7 @@ Conference Papers
     Mark Huasong Meng.
     *2024, the 31th ACM Conference on Computer and Communications Security (CCS'24)*,
     Salt Lake City, USA.
-    (`PDF <?>`__)
+    [`PDF <?>`__]
 
 - **CoreLocker: Neuron-level Usage Control**
 
@@ -21,12 +21,10 @@ Conference Papers
     Guangdong Bai.
     *2024, the 45th IEEE Symposium on Security and Privacy (S&P'24)*,
     San Francisco, USA.
-    (
-    `PDF <https://www.zihan.com.au/assets/files/SP24CoreLocker.pdf>`__,
-    `GitHub <https://github.com/CoreLocker/CoreLocker>`__,
-    `Profile <https://www.zihan.com.au/SP24CoreLocker.html>`__,
-    `Live Video <https://www.youtube.com/watch?v=I9IYVI73odM>`__
-    )
+    [`PDF <https://www.zihan.com.au/assets/files/SP24CoreLocker.pdf>`__]
+    [`GitHub <https://github.com/CoreLocker/CoreLocker>`__]
+    [`Profile <https://www.zihan.com.au/SP24CoreLocker.html>`__]
+    [`Live Video <https://www.youtube.com/watch?v=I9IYVI73odM>`__]
 
     .. code-block:: bibtex
 
@@ -45,12 +43,10 @@ Conference Papers
     *2024, the 51st ACM SIGPLAN Symposium on Principles of Programming Languages
     (POPL'24)*,
     London, UK.
-    (
-    `PDF <docs/papers/popl24_relu_hull_approximation.pdf>`__,
-    `GitHub <https://github.com/UQ-Trust-Lab/WraLU>`__,
-    `Profile <24popl_relu_hull.html>`__,
-    `Live Video <https://youtu.be/dcF6T7y4xkU?t=24061>`__
-    )
+    [`PDF <docs/papers/popl24_relu_hull_approximation.pdf>`__]
+    [`GitHub <https://github.com/UQ-Trust-Lab/WraLU>`__]
+    [`Profile <24popl_relu_hull.html>`__]
+    [`Live Video <https://youtu.be/dcF6T7y4xkU?t=24061>`__]
 
     .. code-block:: bibtex
 
@@ -73,7 +69,7 @@ Conference Papers
     **Zhongkui Ma**.
     *2023, International Conference on Formal Engineering Methods (ICFEM'23)*,
     Brisbane, Australia.
-    (`PDF <https://link.springer.com/chapter/10.1007/978-981-99-7584-6_17>`__)
+    [`PDF <https://link.springer.com/chapter/10.1007/978-981-99-7584-6_17>`__]
 
     .. code-block:: bibtex
 
@@ -92,10 +88,8 @@ Conference Papers
     Mark Huasong Meng.
     *2023, International Conference on Formal Engineering Methods (ICFEM'23)*,
     Brisbane, Australia.
-    (
-    `PDF <https://link.springer.com/chapter/10.1007/978-981-99-7584-6_7>`__,
-    `GitHub <https://github.com/UQ-Trust-Lab/PdD>`__
-    )
+    [`PDF <https://link.springer.com/chapter/10.1007/978-981-99-7584-6_7>`__]
+    [`GitHub <https://github.com/UQ-Trust-Lab/PdD>`__]
 
     .. code-block:: bibtex
 
@@ -126,13 +120,13 @@ and published during my undergraduate period
     Haixin Ding, Li Xie, **Zhongkui Ma**.
     2018.
     *Technology Intelligence Engineering*.
-    (`PDF <docs/Does_Truthfully-Stating_Strategy_Really_Have_its_Reward.pdf>`__)
+    [`PDF <docs/Does_Truthfully-Stating_Strategy_Really_Have_its_Reward.pdf>`__]
 
 - **Model of Weibo Negative Public Opinion Communication in Colleges and Universities  Based on Double-layer Network** (Chinese Full Text).
 
     **Zhongkui Ma**.
     2018.
     *Journal of Jiamusi Vocational Institute*.
-    (`PDF <docs/Model_of_Weibo_Negative_Public_Opinion_Communication_in_Colleges_and_Universities_Based_on_Double-layer_Network.pdf>`__)
+    [`PDF <docs/Model_of_Weibo_Negative_Public_Opinion_Communication_in_Colleges_and_Universities_Based_on_Double-layer_Network.pdf>`__]
 
 
