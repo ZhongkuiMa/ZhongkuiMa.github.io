@@ -35,7 +35,7 @@ News
 
 - .. raw:: html
 
-     <span class="rainbow-flash"> Newest </span>
+     <span class="rainbow-flash"> <i> Newest!!! </i> </span>
 
   [Aug. 2024]
   Our paper
