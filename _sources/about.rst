@@ -48,9 +48,9 @@ This shows a critical idea of how to **construct the convex hull of a function**
 This work make an effort on the theoretical proof of the convex hull of a function
 in `computational geometry <https://en.wikipedia.org/wiki/Computational_geometry>`_.
 Our implementation is based on the functions provided by
-`pycddlib <https://pycddlib.readthedocs.io/>`_ (
-`double description algorithm <https://link.springer.com/chapter/10.1007/3-540-61576-8_77>`_
-) and thanks to the great work of the authors of pycddlib.
+`pycddlib <https://pycddlib.readthedocs.io/>`_
+(`double description algorithm <https://link.springer.com/chapter/10.1007/3-540-61576-8_77>`_)
+and thanks to the great work of the authors of pycddlib.
 
 This is my second year of PhD study.
 I have began to develop our verification tool for some time, which is mainly implemented
@@ -178,9 +178,9 @@ I liked to collect various kinds of things when I was a child.
 I was also the best
 `Yoyo <https://en.wikipedia.org/wiki/Yo-yo>`_
 player in my city when I was a child.
-I won many times champion in my city (
-`Nanyang <https://en.wikipedia.org/wiki/Nanyang,_Henan>`_
-) and I'm very proud to have that time.
+I won many times champion in my city
+(`Nanyang <https://en.wikipedia.org/wiki/Nanyang,_Henan>`_)
+and I'm very proud to have that time.
 
 I was also a good
 `pen spinning <https://en.wikipedia.org/wiki/Pen_spinning>`_

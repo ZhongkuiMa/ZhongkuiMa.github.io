@@ -33,7 +33,10 @@ Also, welcome to visit our lab,
 News
 ----
 
-- **New!**
+- .. raw:: html
+
+     <span class="rainbow-flash"> News </span>
+
   [Aug. 2024]
   Our paper
   `Uncovering Gradient Inversion Risks in Practical Language Model Training <?>`_
@@ -80,7 +83,7 @@ News
 
 - [Nov. 2023]
   I participate in
-  `the 24th International Conference on Formal Engineering Methods (ICFEM)
+  `the 24th International Conference on Formal Engineering Methods (ICFEM'23)
   <https://formal-analysis.com/icfem/2023/>`_
   at Brisbane, Australia.
   And I present our work,

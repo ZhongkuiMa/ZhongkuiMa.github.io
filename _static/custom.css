@@ -1,0 +1,19 @@
+.rainbow-flash {
+    font-weight: bold;
+    animation: rainbow 0.1s infinite, flash 0.1s infinite;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    16% { color: orange; }
+    33% { color: yellow; }
+    50% { color: green; }
+    66% { color: blue; }
+    83% { color: indigo; }
+    100% { color: violet; }
+}
+
+@keyframes flash {
+    0%, 50%, 100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); }
+    25%, 75% { text-shadow: none; }
+}
