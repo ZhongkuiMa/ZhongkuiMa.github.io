@@ -1,5 +1,6 @@
 .rainbow-flash {
     font-weight: bold;
+    font-style: italic;
     animation: rainbow 0.1s infinite, flash 0.1s infinite;
 }
 
