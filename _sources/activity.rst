@@ -1,8 +1,17 @@
 Activities
 ==========
 
-Invited Talks
+Presentations
 -------------
+
+.. admonition:: Dec. 2024
+
+    Tutorial on
+    "`Robustness Verification of Neural Networks using WraLU <https://adc-conference.github.io/2024/program/tutorials>`_"
+    in the
+    `Australasian Database Conference <https://adc-conference.github.io/2024/>`_
+    (ADC'24) on Tue 16 Dec 2024 16:30 AEST (UTC+10)
+    in Gold Coast, Australia.
 
 .. admonition:: May. 2024
 

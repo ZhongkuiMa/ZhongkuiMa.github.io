@@ -37,7 +37,15 @@ News
 
      <span class="rainbow-flash"> New!!! </span>
 
-  [Aug. 2024]
+  [Oct. 2024]
+  We are going to have a tutorial on
+  `Robustness Verification of Neural Networks using WraLU <https://adc-conference.github.io/2024/program/tutorials>`_
+  in the
+  `Australasian Database Conference <https://adc-conference.github.io/2024/>`_
+  (ADC'24) on Tue 16 Dec 2024 16:30 AEST (UTC+10)
+  in Gold Coast, Australia.
+
+- [Aug. 2024]
   Our paper
   `Uncovering Gradient Inversion Risks in Practical Language Model Training <?>`_
   is accepted by
