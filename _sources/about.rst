@@ -216,13 +216,14 @@ My favorite movies includes
 
 
 I liked music includes pop, rock, electronic, rap music, and more.
-
 In recent years, I'm a big fan of
 `KPOP <https://en.wikipedia.org/wiki/K-pop>`_,
 especially
+`Aespa <https://en.wikipedia.org/wiki/Aespa>`_,
+`Izna <https://en.wikipedia.org/wiki/Izna>`_,
+`LE SSERAFIM <https://en.wikipedia.org/wiki/Le_Sserafim>`_,
 `Newjeans <https://en.wikipedia.org/wiki/NewJeans>`_,
 `NMIXX <https://en.wikipedia.org/wiki/Nmixx>`_,
-`Aespa <https://en.wikipedia.org/wiki/Aespa>`_,
-`LE SSERAFIM <https://en.wikipedia.org/wiki/Le_Sserafim>`_,
+`Kiss of Life <https://en.wikipedia.org/wiki/Kiss_of_Life_(group)>`_,
 `BlackPink <https://en.wikipedia.org/wiki/Blackpink>`_
 and mores.
