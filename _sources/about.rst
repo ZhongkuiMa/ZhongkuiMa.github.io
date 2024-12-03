@@ -6,7 +6,7 @@
 About
 ======
 
-I'm a second year PhD student at
+I'm a second-year PhD student at
 `the University of Queensland <https://www.uq.edu.au/>`_ (UQ).
 I'm fortunate to be supervised by A/Prof.
 `Guangdong Bai <https://baigd.github.io/>`_.
@@ -19,10 +19,11 @@ I'm a one hundred percent math amateur, and I'm interested in various mathematic
 models, especially those related to neural networks.
 
 You can learn more about my work by the following links:
-`Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`_,
-`LinkedIn <https://www.linkedin.com/in/zhongkui-ma-3276442a8/>`_,
-`ResearchGate <https://www.researchgate.net/profile/Zhongkui_Ma>`_,
-`ORCID <https://orcid.org/0000-0002-2392-3751>`_.
+
+- `Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`_,
+- `LinkedIn <https://www.linkedin.com/in/zhongkui-ma-3276442a8/>`_,
+- `ResearchGate <https://www.researchgate.net/profile/Zhongkui_Ma>`_,
+- `ORCID <https://orcid.org/0000-0002-2392-3751>`_.
 
 My Study Life
 ----------------------
@@ -44,13 +45,13 @@ In November of the first year, our paper
 about neural network verification is accepted by
 `POPL'24 <https://popl24.sigplan.org/room/POPL-2024-venue-kelvin-lecture>`_.
 *This is real a great honor for me because you know it is hard.*
-This shows a critical idea of how to **construct the convex hull of a function**.
+This shows a critical idea of how to construct the **function hull**.
 This work make an effort on the theoretical proof of the convex hull of a function
 in `computational geometry <https://en.wikipedia.org/wiki/Computational_geometry>`_.
 Our implementation is based on the functions provided by
 `pycddlib <https://pycddlib.readthedocs.io/>`_
 (`double description algorithm <https://link.springer.com/chapter/10.1007/3-540-61576-8_77>`_)
-and thanks to the great work of the authors of pycddlib.
+(many thanks to the authors of pycddlib).
 
 This is my second year of PhD study.
 I have began to develop our verification tool for some time, which is mainly implemented
@@ -145,7 +146,7 @@ In the last two years,
 I was honored to follow my supervisor,
 Dr. `Haixin Ding <http://www7.zzu.edu.cn/glxy/info/1501/5201.htm>`_,
 at `Zhengzhou University <http://www.zzu.edu.cn>`_.
-*I still memorize that night when I was told that I can follow him.*
+*I still memorize that night when I was told that I can supervised by him.*
 This is a *turning point* in my life.
 During this period, I began to learn about
 `system dynamics <https://en.wikipedia.org/wiki/System_dynamics>`_
@@ -160,6 +161,7 @@ and
 Also, affected by my supervisor, I read many books on sociology and philosophy, most of
 which involved communication, sociological research methods, and metaphysics.
 *This is really very important for me.*
+I believe in the metaphysics.
 
 My undergraduate thesis researched consumer perception using factor analysis and web
 crawling methods.
@@ -222,7 +224,7 @@ especially
 `Aespa <https://en.wikipedia.org/wiki/Aespa>`_,
 `Izna <https://en.wikipedia.org/wiki/Izna>`_,
 `LE SSERAFIM <https://en.wikipedia.org/wiki/Le_Sserafim>`_,
-`Newjeans <https://en.wikipedia.org/wiki/NewJeans>`_,
+`NewJeans <https://en.wikipedia.org/wiki/NewJeans>`_,
 `NMIXX <https://en.wikipedia.org/wiki/Nmixx>`_,
 `Kiss of Life <https://en.wikipedia.org/wiki/Kiss_of_Life_(group)>`_,
 `BlackPink <https://en.wikipedia.org/wiki/Blackpink>`_

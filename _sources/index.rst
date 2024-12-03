@@ -37,7 +37,12 @@ News
 
      <span class="rainbow-flash"> New!!! </span>
 
-  [Oct. 2024]
+  [Dec. 2024]
+  I will serve
+  `the ACM SIGPLAN International Conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH'25) <https://2025.splashcon.org/>`_
+  as a member committee member in artifact evaluation committee within the SPLASH OOPSLA Artifacts-track.
+
+- [Oct. 2024]
   We are going to have a tutorial on
   `Robustness Verification of Neural Networks using WraLU <https://adc-conference.github.io/2024/program/tutorials>`_
   in the
@@ -79,9 +84,10 @@ News
   [`Live Video <https://youtu.be/dcF6T7y4xkU?t=24061>`__]
 
 - [Jan. 2024]
-  I am serving
+  I will serve
   `the 45th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'24) <https://pldi24.sigplan.org/>`_
-  as a member of the Artifact Evaluation Committee!
+  as a committee member in artifact evaluation committee within the research
+  artifacts-track.
 
 - [Nov. 2023]
   Our paper
