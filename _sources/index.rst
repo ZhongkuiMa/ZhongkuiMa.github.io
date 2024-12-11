@@ -52,7 +52,7 @@ News
 
 - [Aug. 2024]
   Our paper
-  `Uncovering Gradient Inversion Risks in Practical Language Model Training <?>`_
+  `Uncovering Gradient Inversion Risks in Practical Language Model Training <https://dl.acm.org/doi/10.1145/3658644.3690292>`_
   is accepted by
   `the 31th ACM Conference on Computer and Communications Security (CCS'24) <https://www.sigsac.org/ccs/CCS2024/call-for/call-for-papers.html>`_.
 

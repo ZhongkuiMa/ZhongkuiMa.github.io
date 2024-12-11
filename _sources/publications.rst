@@ -13,7 +13,26 @@ Conference Papers
     Mark Huasong Meng.
     *2024, the 31th ACM Conference on Computer and Communications Security (CCS'24)*,
     Salt Lake City, USA.
-    [`PDF <?>`__]
+    [`PDF <https://dl.acm.org/doi/pdf/10.1145/3658644.3690292>`__]
+    [`GitHub <https://github.com/UQ-Trust-Lab/GRAB>`__]
+
+    .. code-block:: bibtex
+
+        @inproceedings{10.1145/3658644.3690292,
+          author = {Feng, Xinguo and Ma, Zhongkui and Wang, Zihan and Chegne, Eu Joe and Ma, Mengyao and Abuadbba, Alsharif and Bai, Guangdong},
+          title = {Uncovering Gradient Inversion Risks in Practical Language Model Training},
+          year = {2024},
+          isbn = {9798400706363},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3658644.3690292},
+          doi = {10.1145/3658644.3690292},
+          booktitle = {Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security},
+          pages = {3525–3539},
+          numpages = {15},
+          location = {Salt Lake City, UT, USA},
+          series = {CCS '24}
+        }
 
 - **CoreLocker: Neuron-level Usage Control**
 
@@ -21,7 +40,7 @@ Conference Papers
     Guangdong Bai.
     *2024, the 45th IEEE Symposium on Security and Privacy (S&P'24)*,
     San Francisco, USA.
-    [`PDF <https://www.zihan.com.au/assets/files/SP24CoreLocker.pdf>`__]
+    [`PDF <https://www.computer.org/csdl/proceedings-article/sp/2024/313000a222/1WPcYMh3F1C>`__]
     [`GitHub <https://github.com/CoreLocker/CoreLocker>`__]
     [`Profile <https://www.zihan.com.au/SP24CoreLocker.html>`__]
     [`Live Video <https://www.youtube.com/watch?v=I9IYVI73odM>`__]
