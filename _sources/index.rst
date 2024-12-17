@@ -32,23 +32,22 @@ Also, welcome to visit our lab,
 
 News
 ----
+.. raw:: html
 
-- .. raw:: html
+    <span class="rainbow-flash"> New!!! </span>
 
-     <span class="rainbow-flash"> New!!! </span>
-
-  [Dec. 2024]
-  I will serve
-  `the ACM SIGPLAN International Conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH'25) <https://2025.splashcon.org/>`_
-  as a member committee member in artifact evaluation committee within the SPLASH OOPSLA Artifacts-track.
-
-- [Oct. 2024]
-  We are going to have a tutorial on
+- [Dec. 2024]
+  Prof. Bai and I have a tutorial on
   `Robustness Verification of Neural Networks using WraLU <https://adc-conference.github.io/2024/program/tutorials>`_
   in the
   `Australasian Database Conference <https://adc-conference.github.io/2024/>`_
   (ADC'24) on Tue 16 Dec 2024 16:30 AEST (UTC+10)
-  in Gold Coast, Australia.
+  in Gold Coast, Australia. We are awarded the **Distinguished Tutorial Speaker**!
+
+- [Dec. 2024]
+  I will serve
+  `the ACM SIGPLAN International Conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH'25) <https://2025.splashcon.org/>`_
+  as a member committee member in artifact evaluation committee within the SPLASH OOPSLA Artifacts-track.
 
 - [Aug. 2024]
   Our paper
