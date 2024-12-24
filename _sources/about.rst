@@ -117,8 +117,7 @@ I think I have some understanding of the life.
 
 In the first two years,
 I started studying for my undergraduate degree at
-`Zhengzhou University <http://www.zzu.edu.cn>`_
-(`ORCID <https://orcid.org/0000-0002-6438-7908>`__),
+`Zhengzhou University <http://www.zzu.edu.cn>`_,
 majoring in marketing.
 I taught myself undergraduate mathematics and statistics introductory courses, including
 *mathematical analysis*,
@@ -145,7 +144,8 @@ awards (*I think they are not worth mentioning but this is a real experience for
 
 In the last two years,
 I was honored to follow my supervisor,
-Dr. `Haixin Ding <http://www7.zzu.edu.cn/glxy/info/1501/5201.htm>`_,
+Dr. `Haixin Ding <http://www7.zzu.edu.cn/glxy/info/1501/5201.htm>`_
+(`ORCID <https://orcid.org/0000-0002-6438-7908>`__),
 at `Zhengzhou University <http://www.zzu.edu.cn>`_.
 *I still memorize that night when I was told that I can supervised by him.*
 This is a *turning point* in my life.
