@@ -130,7 +130,7 @@ I taught myself undergraduate mathematics and statistics introductory courses, i
 *mathematical statistics*,
 *stochastic processes*,
 *time series*,
-*discrete math*，
+*discrete math*,
 *operations research*
 and so on and so on.
 I taught myself various basic mathematical models and mathematical software (many
@@ -147,7 +147,7 @@ I was honored to follow my supervisor,
 Dr. `Haixin Ding <http://www7.zzu.edu.cn/glxy/info/1501/5201.htm>`_
 (`ORCID <https://orcid.org/0000-0002-6438-7908>`__),
 at `Zhengzhou University <http://www.zzu.edu.cn>`_.
-*I still memorize that night when I was told that I can supervised by him.*
+*I still memorize that night when I was told that he could be my supervisor.*
 This is a *turning point* in my life.
 During this period, I began to learn about
 `system dynamics <https://en.wikipedia.org/wiki/System_dynamics>`_
@@ -169,7 +169,7 @@ crawling methods.
 This thesis is supervised by Prof. Shuyun Du, the head of our school.
 I'm very grateful to complete such a thesis.
 
-In this period, I began to love research and I hope to become a PhD.
+In this period, I began to love research and I hoped to become a PhD.
 
 
 My Hobbies
