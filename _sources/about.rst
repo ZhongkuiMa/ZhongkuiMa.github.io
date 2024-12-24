@@ -117,7 +117,8 @@ I think I have some understanding of the life.
 
 In the first two years,
 I started studying for my undergraduate degree at
-`Zhengzhou University <http://www.zzu.edu.cn>`_,
+`Zhengzhou University <http://www.zzu.edu.cn>`_
+(`ORCID <https://orcid.org/0000-0002-6438-7908>`__),
 majoring in marketing.
 I taught myself undergraduate mathematics and statistics introductory courses, including
 *mathematical analysis*,

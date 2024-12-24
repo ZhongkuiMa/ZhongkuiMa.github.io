@@ -1,3 +1,4 @@
+
 .rainbow-flash {
     font-weight: bold;
     font-style: italic;
@@ -19,8 +20,9 @@
     25%, 75% { text-shadow: none; }
 }
 
-body {
-    font-family: "Press Start 2P", system-ui;
+* {
+    font-family: "Times New Roman", Georgia, serif !important;
+    /*font-family: "Press Start 2P", system-ui;*/
     font-weight: 400;
     font-style: normal;
 }
