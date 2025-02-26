@@ -36,6 +36,12 @@ News
 
     <span class="rainbow-flash"> New!!! </span>
 
+- [Jan. 2024]
+  Our paper
+  `AI Model Modulation with Logits Redistribution <https://openreview.net/forum?id=lOSomJvrc5#discussion>`_
+  is accepted by
+  `the ACM Web Conference 2025 (WWW'25) <https://www2025.thewebconf.org/>`_.
+
 - [Dec. 2024]
   Prof. Bai and I have a tutorial on
   `Robustness Verification of Neural Networks using WraLU <https://adc-conference.github.io/2024/program/tutorials>`_

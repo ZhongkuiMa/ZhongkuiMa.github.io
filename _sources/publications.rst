@@ -7,6 +7,25 @@ Conference Papers
 2024
 ~~~~
 
+- **AI Model Modulation with Logits Redistribution**
+    Zihan Wang, **Zhongkui Ma**, Xinguo Feng, Zhiyang Mei, Ethan Ma, Derui Wang, Jason Xue, Guangdong Bai.
+    *2025, the ACM Web Conference 2025 (WWW'25)*,
+    Sydney, Australia.
+    [`OpenReview <https://openreview.net/forum?id=lOSomJvrc5#discussion>`__]
+    [`PDF <https://www.zihan.com.au/assets/files/WWW25AIM.pdf>`__]
+    [`GitHub <https://github.com/UQ-Trust-Lab/AIM>`__]
+
+    .. code-block:: bibtex
+
+        @inproceedings{
+          wang2025ai,
+          title={{AI} Model Modulation with Logits Redistribution},
+          author={Zihan Wang and Zhongkui Ma and Xinguo Feng and Zhiyang Mei and Ethan Ma and Derui Wang and Jason Xue and Guangdong Bai},
+          booktitle={THE WEB CONFERENCE 2025},
+          year={2025},
+          url={https://openreview.net/forum?id=lOSomJvrc5}
+        }
+
 - **Uncovering Gradient Inversion Risks in Practical Language Model Training**
 
     Xinguo Feng, **Zhongkui Ma**, Zihan Wang, Shuofeng Liu, Mengyao Ma, Hao Guan,
