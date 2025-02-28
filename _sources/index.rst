@@ -40,14 +40,14 @@ News
   `AI Model Modulation with Logits Redistribution <https://openreview.net/forum?id=lOSomJvrc5#discussion>`_
   is accepted by
   `the ACM Web Conference 2025 (WWW'25) <https://www2025.thewebconf.org/>`_.
-  Congrats, `Zihan <https://https://www.zihan.com.au//>`__!
+  Congrats, `Zihan <https://www.zihan.com.au/>`__!
 
 - [Dec. 2024]
   `Prof. Bai <https://baigd.github.io/>`__ and I have a tutorial on
   `Robustness Verification of Neural Networks using WraLU <https://adc-conference.github.io/2024/program/tutorials>`_
   in the
-  `Australasian Database Conference <https://adc-conference.github.io/2024/>`_
-  (ADC'24) on Tue 16 Dec 2024 16:30 AEST (UTC+10)
+  `Australasian Database Conference (ADC'24) <https://adc-conference.github.io/2024/>`_
+  on Tue 16 Dec 2024 16:30 AEST (UTC+10)
   in Gold Coast, Australia. We are awarded the **Distinguished Tutorial Speaker**!
 
 - [Dec. 2024]
@@ -79,7 +79,7 @@ News
   `CORELOCKER: Neuron-level Usage Control <https://www.computer.org/csdl/proceedings-article/sp/2024/313000a222/1WPcYMh3F1C>`_
   is accepted by
   `the 45th IEEE Symposium on Security and Privacy (S&P'24) <https://sp2024.ieee-security.org/>`_.
-  Congrats, `Zihan <https://www.zihan.com.au//>`__!
+  Congrats, `Zihan <https://www.zihan.com.au/>`__!
   [`Live Video <https://www.youtube.com/watch?v=I9IYVI73odM>`__]
 
 - [Jan. 2024]
