@@ -4,10 +4,11 @@ Publications
 Conference Papers
 -----------------
 
-2024
+2025
 ~~~~
 
 - **AI Model Modulation with Logits Redistribution**
+
     Zihan Wang, **Zhongkui Ma**, Xinguo Feng, Zhiyang Mei, Ethan Ma, Derui Wang, Jason Xue, Guangdong Bai.
     *2025, the ACM Web Conference 2025 (WWW'25)*,
     Sydney, Australia.
@@ -25,6 +26,9 @@ Conference Papers
           year={2025},
           url={https://openreview.net/forum?id=lOSomJvrc5}
         }
+
+2024
+~~~~
 
 - **Uncovering Gradient Inversion Risks in Practical Language Model Training**
 
@@ -143,28 +147,30 @@ Conference Papers
 Journal Papers
 --------------
 
+Early Works
+~~~~~~~~~~~
+
 The following early works are about
 `Social Simulation <https://en.wikipedia.org/wiki/Social_simulation>`_
 and
 `Agent-based Models <https://en.wikipedia.org/wiki/Agent-based_model>`_
-(ABM), supervised by Dr.
+(ABM, implemented by
+`Repast Simphony <https://repast.github.io/>`_), supervised by Dr.
 `Haixin Ding <http://www7.zzu.edu.cn/glxy/info/1501/5201.htm>`_
+[`ORCID <https://orcid.org/0000-0002-6438-7908>`_]
 and published during my undergraduate period
-(2014-2018) and implemented by
-`Repast Simphony <https://repast.github.io/>`_.
+(2014-2018).
 
 - **Does Truthfully-Stating Strategy Really Have its Reward? — Research on the Communication Strategies of Innovation Quality** (Chinese Full Text).
 
     Haixin Ding, Li Xie, **Zhongkui Ma**.
     2018.
     *Technology Intelligence Engineering*.
-    [`PDF <docs/Does_Truthfully-Stating_Strategy_Really_Have_its_Reward.pdf>`__]
 
 - **Model of Weibo Negative Public Opinion Communication in Colleges and Universities  Based on Double-layer Network** (Chinese Full Text).
 
     **Zhongkui Ma**.
     2018.
     *Journal of Jiamusi Vocational Institute*.
-    [`PDF <docs/Model_of_Weibo_Negative_Public_Opinion_Communication_in_Colleges_and_Universities_Based_on_Double-layer_Network.pdf>`__]
 
 

@@ -1,8 +1,3 @@
-.. my_website documentation master file, created by
-  sphinx-quickstart on Sat Aug 24 13:02:14 2024.
-  You can adapt this file completely to your liking, but it should at least
-  contain the root `toctree` directive.
-
 Home
 ====
 
@@ -13,6 +8,7 @@ Home
   about
   publications
   activity
+
 
 .. image:: imgs/personal_photo.png
   :alt: My personal photo
@@ -26,24 +22,28 @@ About
 Hi there! I'm Zhongkui Ma (马中奎), currently diving deep into my PhD journey at
 `the University of Queensland <https://www.uq.edu.au/>`_.
 I'm fortunate to be supervised by A/Prof.
-`Guangdong Bai <https://baigd.github.io/>`_.
+`Guangdong Bai <https://baigd.github.io/>`__.
 Also, welcome to visit our lab,
 `TrustLab <https://uq-trust-lab.github.io/>`_.
+
 
 News
 ----
 .. raw:: html
 
-    <span class="rainbow-flash"> New!!! </span>
+    <span class="rainbow-flash">
+    New!!! &#x1F389; &#x1F389; &#x1F389;
+    </span>
 
-- [Jan. 2024]
+- [Jan. 2025]
   Our paper
   `AI Model Modulation with Logits Redistribution <https://openreview.net/forum?id=lOSomJvrc5#discussion>`_
   is accepted by
   `the ACM Web Conference 2025 (WWW'25) <https://www2025.thewebconf.org/>`_.
+  Congrats, `Zihan <https://https://www.zihan.com.au//>`__!
 
 - [Dec. 2024]
-  Prof. Bai and I have a tutorial on
+  `Prof. Bai <https://baigd.github.io/>`__ and I have a tutorial on
   `Robustness Verification of Neural Networks using WraLU <https://adc-conference.github.io/2024/program/tutorials>`_
   in the
   `Australasian Database Conference <https://adc-conference.github.io/2024/>`_
@@ -60,13 +60,14 @@ News
   `Uncovering Gradient Inversion Risks in Practical Language Model Training <https://dl.acm.org/doi/10.1145/3658644.3690292>`_
   is accepted by
   `the 31th ACM Conference on Computer and Communications Security (CCS'24) <https://www.sigsac.org/ccs/CCS2024/call-for/call-for-papers.html>`_.
+  Congrats, Xinguo!
 
 - [May. 2024]
   I will have a presentation about ReLU Hull Approximation in the
   workshop
   *Formal Methods in Australia and New Zealand*
-  during 29 May - 30 May 2024 at the University of Queensland, St Lucia.
-  My presentation time is 15:30-16:00 on 30 May 2024.
+  during 29--30 May 2024 at the University of Queensland, St Lucia.
+  My presentation time is 15:30--16:00 on 30 May 2024.
 
 - [Apr. 2024]
   I will present our work ReLU Hull Approximation in
@@ -78,21 +79,21 @@ News
   `CORELOCKER: Neuron-level Usage Control <https://www.computer.org/csdl/proceedings-article/sp/2024/313000a222/1WPcYMh3F1C>`_
   is accepted by
   `the 45th IEEE Symposium on Security and Privacy (S&P'24) <https://sp2024.ieee-security.org/>`_.
+  Congrats, `Zihan <https://www.zihan.com.au//>`__!
   [`Live Video <https://www.youtube.com/watch?v=I9IYVI73odM>`__]
 
 - [Jan. 2024]
   I present our work, ReLU Hull Approximation in
   `POPL'24 <https://popl24.sigplan.org/>`_
-  in Kelvin
-  Room of `the Institution of Engineering and Technology (IET) <https://www.theiet.org/>`_
+  in Kelvin Room of
+  `the Institution of Engineering and Technology (IET) <https://www.theiet.org/>`_
   at London, UK.
   [`Live Video <https://youtu.be/dcF6T7y4xkU?t=24061>`__]
 
 - [Jan. 2024]
   I will serve
   `the 45th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'24) <https://pldi24.sigplan.org/>`_
-  as a committee member in artifact evaluation committee within the research
-  artifacts-track.
+  as a committee member in artifact evaluation committee within the research artifacts-track.
 
 - [Nov. 2023]
   Our paper

@@ -223,10 +223,24 @@ In recent years, I'm a big fan of
 `KPOP <https://en.wikipedia.org/wiki/K-pop>`_,
 especially
 `Aespa <https://en.wikipedia.org/wiki/Aespa>`_,
-`Izna <https://en.wikipedia.org/wiki/Izna>`_,
+`ITZY <https://en.wikipedia.org/wiki/Itzy>`_,
 `LE SSERAFIM <https://en.wikipedia.org/wiki/Le_Sserafim>`_,
 `NewJeans <https://en.wikipedia.org/wiki/NewJeans>`_,
 `NMIXX <https://en.wikipedia.org/wiki/Nmixx>`_,
+`Izna <https://en.wikipedia.org/wiki/Izna>`_,
 `Kiss of Life <https://en.wikipedia.org/wiki/Kiss_of_Life_(group)>`_,
 `BlackPink <https://en.wikipedia.org/wiki/Blackpink>`_
 and mores.
+
+
+.. raw:: html
+
+    <br>
+
+    <p style="
+        font-style: italic;
+        text-align: center;
+        display: block;
+    ">
+    “真常应物，真常得性；常应常静，常清静矣。” ——《清静经》
+    </p>
