@@ -28,6 +28,9 @@ Community Work
 2025
 ~~~~
 
+- I served journal `Neural Networks <https://www.sciencedirect.com/journal/neural-networks>`_
+  as a reviewer.
+
 - I served
   `the ACM SIGPLAN International Conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH'25) <https://2025.splashcon.org/>`_
   as a member committee member in artifact evaluation committee within the SPLASH OOPSLA artifacts-track.
@@ -37,7 +40,7 @@ Community Work
 
 - I served
   `the 45th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'24) <https://pldi24.sigplan.org/>`_
-  as a committee member in artifact evaluation committee within the Research aArtifacts-track
+  as a committee member in artifact evaluation committee within the research artifacts-track
 
 Tutoring
 ----------
