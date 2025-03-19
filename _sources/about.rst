@@ -19,12 +19,11 @@ I'm a one hundred percent math amateur, and I'm interested in various mathematic
 models, especially those related to neural networks.
 
 You can learn more about my work by the following links:
-
-- `Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`_,
-- `LinkedIn <https://www.linkedin.com/in/zhongkui-ma-3276442a8/>`_,
-- `ResearchGate <https://www.researchgate.net/profile/Zhongkui_Ma>`_,
-- `ORCID <https://orcid.org/0000-0002-2392-3751>`_,
-- `Semantic Scholar <https://www.semanticscholar.org/author/Zhongkui-Ma/2267035345>`_.
+:bdg-link-info:`Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`,
+:bdg-link-info:`LinkedIn <https://www.linkedin.com/in/zhongkui-ma-3276442a8/>`,
+:bdg-link-info:`ResearchGate <https://www.researchgate.net/profile/Zhongkui_Ma>`,
+:bdg-link-info:`ORCID <https://orcid.org/0000-0002-2392-3751>`,
+:bdg-link-info:`Semantic Scholar <https://www.semanticscholar.org/author/Zhongkui-Ma/2267035345>`.
 
 My Study Life
 ----------------------
