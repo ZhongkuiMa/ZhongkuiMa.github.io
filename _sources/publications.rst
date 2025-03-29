@@ -180,6 +180,7 @@ and published during my undergraduate period
     Haixin Ding, Li Xie, **Zhongkui Ma**.
     2018.
     *Technology Intelligence Engineering*.
+    :bdg-link-info:`PDF <#docs/papers/Does Truthfully-Stating Strategy Really Have its Reward.pdf>`
 
     **Abstract:**
     A multi-phase and multi-state model is constructed at micro level for modeling the diffusion of innovation, and typical innovation quality communication strategies are proposed. Moreover, an Agent-based modeling and simulation technique is also employed to investigate the effects of different innovation quality communication strategies under various settings. The results show that (1) the intuitively appealing truthfully-stating strategy is not rewarding as expected, and from the perspective of specific transaction, over-stating strategy should be adopted, and (2) the dominant satisfaction paradigm in the mainstream marketing is misleading for the choice of innovation quality communication strategies.
@@ -188,7 +189,7 @@ and published during my undergraduate period
     **Zhongkui Ma**.
     2018.
     *Journal of Jiamusi Vocational Institute*.
-
+    :bdg-link-info:`PDF <#docs/papers/Model of Weibo Negative Public Opinion Communication in Colleges and Universities Based on Double-layer Network.pdf>`
     **Abstract:**
     The main body of Weibo students in colleges and universities makes public opinion on and off the line have strong communication power, in order to verify the necessity of implementing offline strategy. In this paper, a negative public opinion propagation model is constructed on the mixed two-layer network structure of WS small-world network and BA scale-free network. The research shows that the implementation of offline strategy helps to reduce the scope and speed of negative public opinion diffusion, and offline strategy should also pay attention to strengthening implementation.
 

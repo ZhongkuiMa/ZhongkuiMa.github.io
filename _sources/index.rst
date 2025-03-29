@@ -8,6 +8,7 @@ Home
   about
   publications
   activity
+  blog
 
 
 .. image:: imgs/personal_photo.png
@@ -48,7 +49,8 @@ News
   in the
   `Australasian Database Conference (ADC'24) <https://adc-conference.github.io/2024/>`_
   on Tue 16 Dec 2024 16:30 AEST (UTC+10)
-  in Gold Coast, Australia. We are awarded the **Distinguished Tutorial Speaker**!
+  in Gold Coast, Australia.
+  We are awarded the **Distinguished Tutorial Speaker**!
 
 - [Dec. 2024]
   I will serve

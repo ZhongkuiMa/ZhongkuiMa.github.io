@@ -11,12 +11,9 @@ I'm a second-year PhD student at
 I'm fortunate to be supervised by A/Prof.
 `Guangdong Bai <https://baigd.github.io/>`_.
 
-My current research focuses on **neural network verification**, especially verifying
-neural networks by over-approximating convex hulls, i.e., constructing linear
-constraints for the non-linear neural networks.
+My current research focuses on **neural network verification**, especially verifying neural networks by over-approximating convex hulls, i.e., constructing linear constraints for the non-linear neural networks.
 
-I'm a one hundred percent math amateur, and I'm interested in various mathematical
-models, especially those related to neural networks.
+I'm a one hundred percent math amateur, and I'm interested in various mathematical models, especially those related to neural networks.
 
 You can learn more about my work by the following links:
 :bdg-link-info:`Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`,
@@ -28,34 +25,23 @@ You can learn more about my work by the following links:
 My Study Life
 ----------------------
 
-2023 - Current
-~~~~~~~~~~~~~~
+2025
+~~~~~
 
-I began my PhD study in January, 2023.
-I am happy to be supervised by A/Prof.
-`Guangdong Bai <https://baigd.github.io/>`_.
-I focus on neural network verification, specifically verifying neural networks by
-over-approximating convex hulls.
-I also collaborate with my colleague,
-`Zihan Wang <https://www.zihan.com.au/>`_ on neuron level usage control,
-and Xinguo Feng on *gradient inversion attack* (GIA).
-I'm very interested in theoretical proofs about neural networks on any topic.
-In November of the first year, our paper
-`ReLU Hull Approximation <https://dl.acm.org/doi/10.1145/3632917>`_
-about neural network verification is accepted by
-`POPL'24 <https://popl24.sigplan.org/room/POPL-2024-venue-kelvin-lecture>`_.
-*This is real a great honor for me because you know it is hard.*
-This shows a critical idea of how to construct the **function hull**.
-This work make an effort on the theoretical proof of the convex hull of a function
-in `computational geometry <https://en.wikipedia.org/wiki/Computational_geometry>`_.
-Our implementation is based on the functions provided by
-`pycddlib <https://pycddlib.readthedocs.io/>`_
-(`double description algorithm <https://link.springer.com/chapter/10.1007/3-540-61576-8_77>`_)
-(many thanks to the authors of pycddlib).
+This is my third year of PhD study.
+My friend `Zihan Wang <https://www.zihan.com.au/>`_ and I published a paper called `AI Model Modulation with Logits Redistribution <https://www.zihan.com.au/assets/files/WWW25AIM.pdf>`_ on `WWW'25 <https://www2025.thewebconf.org/>`_. It's really a great honor for me to be a co-author of this paper.
+Disappointingly, I have not finished my software yet, but I have made some progress.
+I have published two small tools on GitHub, which are very important for my research.
+They are:
+`slimonnx <https://github.com/ZhongkuiMa/slimonnx>`_ and `torchonnx <https://github.com/ZhongkuiMa/torchonnx>`_.
+`slimonnx` is a tool for simplifying the ONNX model and `torchonnx` is a tool for converting onnx model to torch model. I think they are very stunning.
+
+
+2024
+~~~~
 
 This is my second year of PhD study.
-I have began to develop our verification tool for some time, which is mainly implemented
-by `Pytorch <https://pytorch.org/>`_, I hope it can be released in the end of 2024.
+I have began to develop our verification tool for some time, which is mainly implemented by `Pytorch <https://pytorch.org/>`_, I hope it can be released in the end of 2024.
 In May of the second year, our paper
 (`Zihan Wang <https://www.zihan.com.au/>`_ as the first author)
 `CORELOCKER: Neuron-level Usage Control <https://www.computer.org/csdl/proceedings-article/sp/2024/313000a222/1WPcYMh3F1C>`_
@@ -66,35 +52,46 @@ In Aug of the second year, our paper (Xinguo Feng as the first author)
 `Uncovering Gradient Inversion Risks in Practical Language Model Training <?>`_
 about gridient inversion attack (GIA) has been accepted by
 `CCS'24 <https://www.sigsac.org/ccs/CCS2024/program/accepted-papers.html>`_.
-This work uses beam search to invert the text tokens in the language model, which is
-really a hard work.
+This work uses beam search to invert the text tokens in the language model, which is really a hard work.
+
+2023
+~~~~~
+
+I began my PhD study in January, 2023.
+I am happy to be supervised by A/Prof.
+`Guangdong Bai <https://baigd.github.io/>`_.
+I focus on neural network verification, specifically verifying neural networks by over-approximating convex hulls.
+I also collaborate with my colleague, `Zihan Wang <https://www.zihan.com.au/>`_ on neuron level usage control, and Xinguo Feng on *gradient inversion attack* (GIA).
+I'm very interested in theoretical proofs about neural networks on any topic.
+In November of the first year, our paper `ReLU Hull Approximation <https://dl.acm.org/doi/10.1145/3632917>`_ about neural network verification is accepted by `POPL'24 <https://popl24.sigplan.org/room/POPL-2024-venue-kelvin-lecture>`_.
+*This is real a great honor for me because you know it is hard.*
+This shows a critical idea of how to construct the **function hull**.
+This work make an effort on the theoretical proof of the convex hull of a function in `computational geometry <https://en.wikipedia.org/wiki/Computational_geometry>`_.
+Our implementation is based on the functions provided by
+`pycddlib <https://pycddlib.readthedocs.io/>`_
+(`double description algorithm <https://link.springer.com/chapter/10.1007/3-540-61576-8_77>`_)
+(many thanks to the authors of pycddlib).
 
 
 2021 - 2022
 ~~~~~~~~~~~
 
-I started studying for my master's degree at Queensland University (UQ), majoring in
-Information Technology.
-My main focus was on course study, and I learned Java programming and algorithms in
-depth.
+I started studying for my master's degree at Queensland University (UQ), majoring in Information Technology.
+My main focus was on course study, and I learned Java programming and algorithms in depth.
 (Until that time, Java is still my main programming language.)
 
 In the second year, I completed my master's thesis about verifying neural networks by
 `abstract interpretation <https://en.wikipedia.org/wiki/Abstract_interpretation>`_,
-leveraging polyhedral abstract domains and programming methods specifically based on the
-following work,
+leveraging polyhedral abstract domains and programming methods specifically based on the following work,
 `DeepPoly (POPL'19) <https://dl.acm.org/doi/pdf/10.1145/3290354>`_,
 `k-relu (NIPS'19) <https://proceedings.neurips.cc/paper_files/paper/2019/file/0a9fdbb17feb6ccb7ec405cfb85222c4-Paper.pdf>`_,
 `PRIMA (POPL'22) <https://dl.acm.org/doi/pdf/10.1145/3498704>`_.
 I focused on propagation-based models and LP
 (`linear programming <https://en.wikipedia.org/wiki/Linear_programming>`_)-based models.
 *This is a start point for me to study neural network verification.*
-Even though I began with from the view of *abstract interpretation* of *software
-verification* and It is a good start, I think it changes to the view of *optimization*
-and *computational geometry* after that.
-(After that, I think *neural network verification* has been transformed into an
-*optimization* problem with taking the advantage of *automatic differentiation* of
-modern deep learning frameworks like `Pytorch <https://pytorch.org/>`_ with GPU power.)
+Even though I began with from the view of *abstract interpretation* of *software verification* and It is a good start, I think it changes to the view of *optimization* and *computational geometry* after that.
+(After that, I think *neural network verification* has been transformed into an *optimization* problem with taking the advantage of *automatic differentiation* of modern deep learning frameworks like `Pytorch <https://pytorch.org/>`_ with GPU power.)
+Actually, I have finished the main part fo the first paper `ReLU Hull Approximation <https://dl.acm.org/doi/10.1145/3632917>`_ in my master's thesis and it is later accepted by POPL'24 in my PhD study.
 
 
 2018 – 2020
@@ -105,9 +102,7 @@ I had thought deeply about deep learning principles and have a certain understan
 of various models.
 This was inspired by my best friend, Shupeng Geng.
 
-During this period, I also taught myself various introductory courses on algebraic
-geometry, including commutative algebra, homology algebra, algebraic geometry,
-computational algebraic geometry, algebraic topology, and algebraic number theory.
+During this period, I also taught myself various introductory courses on algebraic geometry, including commutative algebra, homology algebra, algebraic geometry, computational algebraic geometry, algebraic topology, and algebraic number theory.
 *Because I think this is my obsession before my post-graduate studying*.
 This is my "gap" in my life and I think it is worth mentioning and memorable.
 I think I have some understanding of the life.
@@ -225,11 +220,11 @@ especially
 `Aespa <https://en.wikipedia.org/wiki/Aespa>`_,
 `ITZY <https://en.wikipedia.org/wiki/Itzy>`_,
 `LE SSERAFIM <https://en.wikipedia.org/wiki/Le_Sserafim>`_,
-`NewJeans <https://en.wikipedia.org/wiki/NewJeans>`_,
 `NMIXX <https://en.wikipedia.org/wiki/Nmixx>`_,
-`Izna <https://en.wikipedia.org/wiki/Izna>`_,
+`NewJeans <https://en.wikipedia.org/wiki/NewJeans>`_,
 `Kiss of Life <https://en.wikipedia.org/wiki/Kiss_of_Life_(group)>`_,
 `BlackPink <https://en.wikipedia.org/wiki/Blackpink>`_
+`Izna <https://en.wikipedia.org/wiki/Izna>`_,
 and mores.
 
 
