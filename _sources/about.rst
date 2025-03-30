@@ -29,7 +29,7 @@ My Study Life
 ~~~~~
 
 This is my third year of PhD study.
-My friend `Zihan Wang <https://www.zihan.com.au/>`_ and I published a paper called `AI Model Modulation with Logits Redistribution <https://www.zihan.com.au/assets/files/WWW25AIM.pdf>`_ on `WWW'25 <https://www2025.thewebconf.org/>`_. It's really a great honor for me to be a co-author of this paper.
+My friend `Zihan Wang <https://www.zihan.com.au/>`_ and I published a paper called `Model Modulation with Logits Redistribution <https://www.zihan.com.au/assets/files/WWW25AIM.pdf>`_ on `WWW'25 <https://www2025.thewebconf.org/>`_. It's really a great honor for me to be a co-author of this paper.
 Disappointingly, I have not finished my software yet, but I have made some progress.
 I have published two small tools on GitHub, which are very important for my research.
 They are:

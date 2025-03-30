@@ -7,7 +7,7 @@ Conference Papers
 2025
 ~~~~
 
-.. dropdown:: "AI Model Modulation with Logits Redistribution".
+.. dropdown:: "Model Modulation with Logits Redistribution".
     Zihan Wang, **Zhongkui Ma**, Xinguo Feng, Zhiyang Mei, Zhiyong Ma, Derui Wang, Jason Xue, Guangdong Bai.
     *2025, the ACM Web Conference 2025 (WWW'25)*,
     Sydney, Australia.
