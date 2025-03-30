@@ -190,6 +190,7 @@ and published during my undergraduate period
     2018.
     *Journal of Jiamusi Vocational Institute*.
     :bdg-link-info:`PDF <#docs/papers/Model of Weibo Negative Public Opinion Communication in Colleges and Universities Based on Double-layer Network.pdf>`
+
     **Abstract:**
     The main body of Weibo students in colleges and universities makes public opinion on and off the line have strong communication power, in order to verify the necessity of implementing offline strategy. In this paper, a negative public opinion propagation model is constructed on the mixed two-layer network structure of WS small-world network and BA scale-free network. The research shows that the implementation of offline strategy helps to reduce the scope and speed of negative public opinion diffusion, and offline strategy should also pay attention to strengthening implementation.
 
