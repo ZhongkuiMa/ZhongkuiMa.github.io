@@ -116,6 +116,13 @@ News
   <https://link.springer.com/chapter/10.1007/978-981-99-7584-6_17>`_.
 
 
+.. raw:: html
+
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=IyNqp7ajueQw8zaczGtQ8CW95BQzZwJ6upOKS9itN7U&cl=ffffff&w=a"></script>
+
+The above map shows the distribution of visitors to this website.
+This widget is provided by `ClustrMaps <https://clustrmaps.com/>`_.
+
 .. * :ref:`genindex`
 .. * :ref:`modindex`
 .. * :ref:`search`
