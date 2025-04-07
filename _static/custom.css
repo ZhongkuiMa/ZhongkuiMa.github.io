@@ -21,8 +21,16 @@
 }
 
 * {
-    /*font-family: "Times New Roman", Georgia, serif !important;*/
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Times New Roman", serif !important;
+    /*font-family: "Press Start 2P", system-ui !important;*/
+    /*font-size: 0.98em;*/
+    /*font-weight: 50;*/
+    /*font-style: normal;*/
+}
+
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
 }
