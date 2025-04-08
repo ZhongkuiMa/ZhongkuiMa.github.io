@@ -5,6 +5,7 @@ Blogs
   :maxdepth: 1
   :caption: Contents:
 
-  blogs/bound_prop
+  blogs/neural_network_verification
+  blogs/bound_propagation
 
 

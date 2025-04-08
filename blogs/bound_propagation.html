@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Bound Propagation Approaches in Neural Network Verification &#8212; Home</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=49d0b6be" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'blogs/bound_propagation';</script>
+    <link rel="canonical" href="https://ZhongkuiMa.github.io/blogs/bound_propagation.html" />
+    <link rel="icon" href="../_static/rover_logo.png"/>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Learn NNV in 3 Minutes" href="neural_network_verification.html" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <!-- Add Google Fonts -->
+<!--  <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">-->
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Home</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity.html">Activities</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../blog.html">Blogs</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="neural_network_verification.html">Learn NNV in 3 Minutes</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Bound Propagation Approaches in Neural Network Verification</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/ZhongkuiMa/ZhongkuiMa.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/blogs/bound_propagation.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Bound Propagation Approaches in Neural Network Verification</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bound-propagation">Bound Propagation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interval-arithmetic">Interval Arithmetic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonotope">Zonotope</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symbolic-bound-propagation">Symbolic Bound Propagation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bound-propagation-with-back-substitution">Bound Propagation with Back-Substitution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forward-vs-backward-bound-propagation">Forward vs. Backward Bound Propagation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#handling-nonlinearities">Handling Nonlinearities</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-bound-propagation">Why Use Bound Propagation?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-different-bound-propagation-methods">Comparing Different Bound Propagation Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-thoughts">Final Thoughts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="bound-propagation-approaches-in-neural-network-verification">
+<h1>Bound Propagation Approaches in Neural Network Verification<a class="headerlink" href="#bound-propagation-approaches-in-neural-network-verification" title="Link to this heading">#</a></h1>
+<p>Neural network verification is an exciting field and it essentially frames the verification problem as an <em>optimization problem</em>. The core idea? Estimating the possible output range of a neural network given an input range. More precisely, we deal with <em>over-approximation</em>, meaning that our estimated output range must fully contain the actual range.</p>
+<p>But it doesn’t stop at the output—this property must hold for <em>every neuron</em>, including those in the intermediate layers. Any approach that guarantees this property is called <em>sound</em>, meaning it maintains <a class="reference external" href="https://en.wikipedia.org/wiki/Soundness">soundness</a>. Today, instead of diving deep into verification theory, let’s focus on one of the most powerful techniques in this field: <strong>bound propagation</strong>.</p>
+<section id="bound-propagation">
+<h2>Bound Propagation<a class="headerlink" href="#bound-propagation" title="Link to this heading">#</a></h2>
+<section id="interval-arithmetic">
+<h3>Interval Arithmetic<a class="headerlink" href="#interval-arithmetic" title="Link to this heading">#</a></h3>
+<p>The well-known <a class="reference external" href="https://en.wikipedia.org/wiki/Interval_arithmetic">interval arithmetic</a> is a fundamental form of bound propagation. Think of it as tracking the possible value ranges for each variable and propagating those intervals through the network—hence the term <em>interval bound propagation</em>.
+Its pros are that it’s simple to implement and works for any type of neural network. However, it has a significant drawback: it can be overly conservative, leading to large intervals that may not accurately reflect the actual output range. This is particularly problematic for deep networks with many layers, where the accumulated error can become substantial.</p>
+</section>
+<section id="zonotope">
+<h3>Zonotope<a class="headerlink" href="#zonotope" title="Link to this heading">#</a></h3>
+<p>Instead of intervals, we can use <strong>zonotopes</strong>, a geometric abstraction commonly used in <a class="reference external" href="https://link.springer.com/article/10.1023/B:NUMA.0000049462.70970.b6">affine arithmetic</a>. This approach originates from <a class="reference external" href="https://en.wikipedia.org/wiki/Abstract_interpretation">abstract interpretation</a> and has been widely adopted in verification.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Further reading:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mLo7gCEAAAAJ&amp;citation_for_view=mLo7gCEAAAAJ:WF5omc3nYNoC">An Introduction to Affine Arithmetic</a> (2003)</p></li>
+<li><p><a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2018/hash/f2f446980d8e971ef3da97af089481c3-Abstract.html">Fast and Effective Robustness Certification</a> (NIPS 2018)</p></li>
+</ul>
+</div>
+</section>
+<section id="symbolic-bound-propagation">
+<h3>Symbolic Bound Propagation<a class="headerlink" href="#symbolic-bound-propagation" title="Link to this heading">#</a></h3>
+<p>Rather than using explicit numerical intervals, we can track <em>symbolic expressions</em> (typically linear) that represent bounds in terms of input variables. This method, <em>symbolic bound propagation</em>, offers a much tighter estimation because it takes into account <em>term cancellation</em>.
+Much tighter bounds than interval arithmetic!</p>
+<p>However, all these methods have one thing in common: they <em>propagate bounds forward</em>. What if we could achieve even tighter approximations? That’s where <strong>back-substitution</strong> comes into play!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Further reading:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.usenix.org/conference/usenixsecurity18/presentation/wang-shiqi">Formal Security Analysis of Neural Networks using Symbolic Intervals</a> (Usenix Security 2018)</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="bound-propagation-with-back-substitution">
+<h2>Bound Propagation with Back-Substitution<a class="headerlink" href="#bound-propagation-with-back-substitution" title="Link to this heading">#</a></h2>
+<p>Bound propagation with back-substitution extends symbolic bound propagation, but instead of moving <strong>forward</strong>, it works <strong>backward</strong>—hence the name <em>backward bound propagation</em>.</p>
+<section id="forward-vs-backward-bound-propagation">
+<h3>Forward vs. Backward Bound Propagation<a class="headerlink" href="#forward-vs-backward-bound-propagation" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Forward:</strong> Start with input variables and propagate bounds layer by layer toward the output.</p></li>
+<li><p><strong>Backward:</strong> Start with the output variables and back-propagate their symbolic expressions toward the input.</p></li>
+</ul>
+<p>This shift in direction allows us to refine bounds at earlier layers, leading to <strong>tighter estimates</strong>. But to make it work, we need one crucial ingredient: <strong>relaxation</strong> of nonlinear functions.</p>
+</section>
+<section id="handling-nonlinearities">
+<h3>Handling Nonlinearities<a class="headerlink" href="#handling-nonlinearities" title="Link to this heading">#</a></h3>
+<p>Neural networks contain nonlinear functions, such as activation functions. Since bound propagation relies on linear expressions, we need to approximate these nonlinear functions with <strong>two linear bounds</strong>—one upper and one lower. When propagating bounds, we carefully choose which bound to apply based on weight signs to maintain the soundness property.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Further reading:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://proceedings.mlr.press/v80/weng18a.html?utm_source=miragenews&amp;utm_medium=miragenews&amp;utm_campaign=news">Towards Fast Computation of Certified Robustness for ReLU Networks</a> (PMLR 2018) This is <em>FastLin</em> and it is the ReLU version of CROWN.</p></li>
+<li><p><a class="reference external" href="https://proceedings.neurips.cc/paper/2018/hash/d04863f100d59b3eb688a11f95b0ae60-Abstract.html">Efficient Neural Network Robustness Certification with General Activation Functions</a> (NIPS 2018) This is <em>CROWN</em> and it has become the basic technique for the state-of-the-art in neural network verification (<a class="reference external" href="https://github.com/Verified-Intelligence/alpha-beta-CROWN">ab-CROWN</a>). This paper also introduces the linear bounds with optimizable linear bounds by introducing some parameters by taking the linear bounds with learnable parameters.</p></li>
+<li><p><a class="reference external" href="https://dl.acm.org/doi/abs/10.1145/3290354">An abstract domain for certifying neural networks</a> (POPL 2019) This is <em>DeepPoly</em> that is formulated by the theory of abstract interpretation. There is some tiny difference between DeepPoly and CROWN, but they are basically the same. This difference is that the DeepPoly will update the bounds during the back-substitution with each preceding layers’ bounds but CROWN only calculate the bounds until back-substitution to the input layer, which is a tiny point and only shown in the code. Also, there is no theory to showing that such a difference really brings a better bound but some cases confirm such a difference (e.g., two adjacent non-linear layer like MaxPool after ReLU).</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="why-use-bound-propagation">
+<h2>Why Use Bound Propagation?<a class="headerlink" href="#why-use-bound-propagation" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Efficiency</strong>: Bound propagation is <em>fast</em>, thanks to parallel computing. Most operations are basic linear algebra operations, which are heavily optimized in modern libraries and can be accelerated using GPUs.</p></li>
+<li><p><strong>Scalability</strong>: Unlike other verification approaches that require solving complex optimization problems, bound propagation works efficiently on large networks.</p></li>
+</ul>
+</section>
+<section id="comparing-different-bound-propagation-methods">
+<h2>Comparing Different Bound Propagation Methods<a class="headerlink" href="#comparing-different-bound-propagation-methods" title="Link to this heading">#</a></h2>
+<p>Bound propagation is a powerful tool in neural network verification. While interval arithmetic is simple and fast, it’s often too loose to be practical. More advanced techniques like zonotope-based and symbolic methods offer much better approximations, with backward symbolic bound propagation being among the tightest available methods.
+There’s no formal proof ranking these methods in terms of tightness, but we have some general observations:</p>
+<ul class="simple">
+<li><p><strong>Interval arithmetic</strong> is the most conservative.</p></li>
+<li><p><strong>Forward symbolic bound propagation</strong> is tighter than interval arithmetic but still somewhat conservative.</p></li>
+<li><p><strong>Zonotope-based approaches</strong> can sometimes achieve similar tightness to backward symbolic bound propagation because it require parallel lower and upper linear bounds, but they come with high memory costs.</p></li>
+<li><p><strong>Backward symbolic bound propagation</strong> generally provides the tightest bounds, though it has higher computational complexity.</p></li>
+</ul>
+<p>Backward symbolic bound propagation is generally <strong>the most accurate</strong>, but it comes at the cost of increased computational effort due to repeated back-substitutions.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Approach</p></th>
+<th class="head"><p>Tightness</p></th>
+<th class="head"><p>Memory Usage</p></th>
+<th class="head"><p>Time Complexity (for layer number)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Interval Arithmetic</p></td>
+<td><p>Loose</p></td>
+<td><p>Low</p></td>
+<td><p>Fast (Linear)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Forward Symbolic</p></td>
+<td><p>Moderate</p></td>
+<td><p>Low</p></td>
+<td><p>Fast (Linear)</p></td>
+</tr>
+<tr class="row-even"><td><p>Zonotope</p></td>
+<td><p>Good</p></td>
+<td><p>High</p></td>
+<td><p>Fast (Linear)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Backward Symbolic</p></td>
+<td><p>Best</p></td>
+<td><p>Moderate</p></td>
+<td><p>Slower (Quadratic)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="final-thoughts">
+<h2>Final Thoughts<a class="headerlink" href="#final-thoughts" title="Link to this heading">#</a></h2>
+<p>Is there any proof to guarantee the tightness of the bound propagation?</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="neural_network_verification.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Learn NNV in 3 Minutes</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bound-propagation">Bound Propagation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interval-arithmetic">Interval Arithmetic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonotope">Zonotope</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symbolic-bound-propagation">Symbolic Bound Propagation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bound-propagation-with-back-substitution">Bound Propagation with Back-Substitution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forward-vs-backward-bound-propagation">Forward vs. Backward Bound Propagation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#handling-nonlinearities">Handling Nonlinearities</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-bound-propagation">Why Use Bound Propagation?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-different-bound-propagation-methods">Comparing Different Bound Propagation Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-thoughts">Final Thoughts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Zhongkui Ma
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Zhongkui Ma.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
