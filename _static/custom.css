@@ -20,13 +20,13 @@
     25%, 75% { text-shadow: none; }
 }
 
-* {
-    font-family: "Times New Roman", serif !important;
-    /*font-family: "Press Start 2P", system-ui !important;*/
-    /*font-size: 0.98em;*/
-    /*font-weight: 50;*/
-    /*font-style: normal;*/
-}
+/** {*/
+/*    font-family: "Times New Roman", serif !important;*/
+/*    !*font-family: "Press Start 2P", system-ui !important;*!*/
+/*    !*font-size: 0.98em;*!*/
+/*    !*font-weight: 50;*!*/
+/*    !*font-style: normal;*!*/
+/*}*/
 
 p {
   word-wrap: break-word;
