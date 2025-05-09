@@ -29,6 +29,7 @@ Also, welcome to visit our lab,
 
 
 You can learn more about my work by the following links:
+
 :bdg-link-info:`GitHub <https://github.com/ZhongkuiMa>`,
 :bdg-link-info:`Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`,
 :bdg-link-info:`LinkedIn <https://www.linkedin.com/in/zhongkui-ma-3276442a8/>`,
@@ -127,7 +128,8 @@ News
 
 .. raw:: html
 
-    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=IyNqp7ajueQw8zaczGtQ8CW95BQzZwJ6upOKS9itN7U&cl=ffffff&w=a"></script>
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=IyNqp7ajueQw8zaczGtQ8CW95BQzZwJ6upOKS9itN7U&cl=ffffff&w=a"
+    ></script>
 
 The above map shows the distribution of visitors to this website.
 This widget is provided by `ClustrMaps <https://clustrmaps.com/>`_.

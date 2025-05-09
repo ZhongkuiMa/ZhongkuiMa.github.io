@@ -16,6 +16,7 @@ My current research focuses on **neural network verification**, especially verif
 I'm a one hundred percent math amateur, and I'm interested in various mathematical models, especially those related to neural networks.
 
 You can learn more about my work by the following links:
+
 :bdg-link-info:`Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`,
 :bdg-link-info:`LinkedIn <https://www.linkedin.com/in/zhongkui-ma-3276442a8/>`,
 :bdg-link-info:`ResearchGate <https://www.researchgate.net/profile/Zhongkui_Ma>`,
