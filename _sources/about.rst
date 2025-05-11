@@ -30,28 +30,50 @@ My Study Life
 ~~~~~
 
 This is my third year of PhD study.
-My friend `Zihan Wang <https://www.zihan.com.au/>`_ and I published a paper called `Model Modulation with Logits Redistribution <https://www.zihan.com.au/assets/files/WWW25AIM.pdf>`_ on `WWW'25 <https://www2025.thewebconf.org/>`_. It's really a great honor for me to be a co-author of this paper.
 
 Currently, I have not finished my software yet, but I have made some progress.
 I'm currently working on some exciting tools that I'm thrilled to share with you:
 
-- `shapeonnx <https://github.com/ZhongkuiMa/shapeonnx>`_: A tool to **infer the shape of an ONNX model** when the official tool is down. It's a simple yet powerful tool that helps you understand the dimensions of your model's inputs and outputs! 📏
+- `shapeonnx <https://github.com/ZhongkuiMa/shapeonnx>`_: A tool to **infer the shape of an ONNX model** when the official tool is down. It's a simple yet powerful tool that helps you understand the dimensions of your model's inputs and outputs!
 
-- `slimonnx <https://github.com/ZhongkuiMa/slimonnx>`_: A tool to **optimize and simplify your ONNX models** by removing redundant operations and resolving version issues. It makes ONNX files cleaner, more efficient, and ready for action! 🚀
+- `slimonnx <https://github.com/ZhongkuiMa/slimonnx>`_: A tool to **optimize and simplify your ONNX models** by removing redundant operations and resolving version issues. It makes ONNX files cleaner, more efficient, and ready for action!
 
-- `torchonnx <https://github.com/ZhongkuiMa/torchonnx>`_: A tool for **converting ONNX models** to **PyTorch models** (``.pth`` for parameters, ``.py`` for structure). It's simple, lightweight, and designed for seamless model conversion 🔄.
+- `torchonnx <https://github.com/ZhongkuiMa/torchonnx>`_: A tool for **converting ONNX models** to **PyTorch models** (``.pth`` for parameters, ``.py`` for structure). It's simple, lightweight, and designed for seamless model conversion.
 
-- `torchvnnlib <https://github.com/ZhongkuiMa/torchvnnlib>`_: A tool to **convert VNN-LIB files** (``.vnnlib``) to **PyTorch tensors** (``.pth`` files) for efficient neural network verification. Take full advantage of the PyTorch ecosystem! 🚀
+- `torchvnnlib <https://github.com/ZhongkuiMa/torchvnnlib>`_: A tool to **convert VNN-LIB files** (``.vnnlib``) to **PyTorch tensors** (``.pth`` files) for efficient neural network verification. Take full advantage of the PyTorch ecosystem!
 
-- `propdag <https://github.com/ZhongkuiMa/propdag>`_: A **bound propagation framework** for **neural network verification**. It supports any **DAG (Directed Acyclic Graph)** structure, covering both **feedforward** and **backward** propagation patterns for verification. This tool allows researchers to focus on their algorithms without worrying about complex computation graphs! 💪
+- `propdag <https://github.com/ZhongkuiMa/propdag>`_: A **bound propagation framework** for **neural network verification**. It supports any **DAG (Directed Acyclic Graph)** structure, covering both **feedforward** and **backward** propagation patterns for verification. This tool allows researchers to focus on their algorithms without worrying about complex computation graphs!
 
 
 You can lean more about them in my `Github <https://github.com/ZhongkuiMa>`_.
 Please expect my software in recent future.
 
+My friend `Zihan Wang <https://www.zihan.com.au/>`_ and I published a paper called `Model Modulation with Logits Redistribution <https://www.zihan.com.au/assets/files/WWW25AIM.pdf>`_ on `WWW'25 <https://www2025.thewebconf.org/>`_. It's really a great honor for me to be a co-author of this paper.
 
-2024
-~~~~
+
+2023 - 2024
+~~~~~~~~~~~~
+
+I began my PhD study in January, 2023.
+I am happy to be supervised by A/Prof.
+`Guangdong Bai <https://baigd.github.io/>`_.
+I focus on neural network verification, specifically verifying neural networks by over-approximating convex hulls.
+
+I also collaborate with my colleague,
+`Zihan Wang <https://www.zihan.com.au/>`_
+on neuron level usage control, and
+`Xinguo Feng <https://shanefeng123.github.io/page/>`_
+on *gradient inversion attack* (GIA).
+
+I'm very interested in theoretical proofs about neural networks on any topic.
+In November of the first year, our paper `ReLU Hull Approximation <https://dl.acm.org/doi/10.1145/3632917>`_ about neural network verification is accepted by `POPL'24 <https://popl24.sigplan.org/room/POPL-2024-venue-kelvin-lecture>`_.
+This is real a *great honor* for me because you know it is *hard*.
+This shows a critical idea of how to construct the **function hull**.
+This work make an effort on the theoretical proof of the convex hull of a function in `computational geometry <https://en.wikipedia.org/wiki/Computational_geometry>`_.
+Our implementation is based on the functions provided by
+`pycddlib <https://pycddlib.readthedocs.io/>`_
+(`double description algorithm <https://link.springer.com/chapter/10.1007/3-540-61576-8_77>`_)
+(many thanks to the authors of pycddlib).
 
 This is my second year of PhD study.
 I have began to develop our verification tool for some time, which is mainly implemented by `Pytorch <https://pytorch.org/>`_, I hope it can be released in the end of 2024.
@@ -61,29 +83,11 @@ In May of the second year, our paper
 about model version control has been accepted by
 `S&P'24 <https://sp2024.ieee-security.org/accepted-papers.html>`_.
 This work states a critical idea of how large weights affect the model performance.
-In Aug of the second year, our paper (Xinguo Feng as the first author)
+In Aug of the second year, our paper (`Xinguo Feng <https://shanefeng123.github.io/page/>`_ as the first author)
 `Uncovering Gradient Inversion Risks in Practical Language Model Training <?>`_
 about gridient inversion attack (GIA) has been accepted by
 `CCS'24 <https://www.sigsac.org/ccs/CCS2024/program/accepted-papers.html>`_.
 This work uses beam search to invert the text tokens in the language model, which is really a hard work.
-
-2023
-~~~~~
-
-I began my PhD study in January, 2023.
-I am happy to be supervised by A/Prof.
-`Guangdong Bai <https://baigd.github.io/>`_.
-I focus on neural network verification, specifically verifying neural networks by over-approximating convex hulls.
-I also collaborate with my colleague, `Zihan Wang <https://www.zihan.com.au/>`_ on neuron level usage control, and Xinguo Feng on *gradient inversion attack* (GIA).
-I'm very interested in theoretical proofs about neural networks on any topic.
-In November of the first year, our paper `ReLU Hull Approximation <https://dl.acm.org/doi/10.1145/3632917>`_ about neural network verification is accepted by `POPL'24 <https://popl24.sigplan.org/room/POPL-2024-venue-kelvin-lecture>`_.
-*This is real a great honor for me because you know it is hard.*
-This shows a critical idea of how to construct the **function hull**.
-This work make an effort on the theoretical proof of the convex hull of a function in `computational geometry <https://en.wikipedia.org/wiki/Computational_geometry>`_.
-Our implementation is based on the functions provided by
-`pycddlib <https://pycddlib.readthedocs.io/>`_
-(`double description algorithm <https://link.springer.com/chapter/10.1007/3-540-61576-8_77>`_)
-(many thanks to the authors of pycddlib).
 
 
 2021 - 2022
@@ -101,8 +105,8 @@ leveraging polyhedral abstract domains and programming methods specifically base
 `PRIMA (POPL'22) <https://dl.acm.org/doi/pdf/10.1145/3498704>`_.
 I focused on propagation-based models and LP
 (`linear programming <https://en.wikipedia.org/wiki/Linear_programming>`_)-based models.
-*This is a start point for me to study neural network verification.*
-Even though I began with from the view of *abstract interpretation* of *software verification* and It is a good start, I think it changes to the view of *optimization* and *computational geometry* after that.
+This is a *start point* for me to study neural network verification.
+Even though I began with from the view of *abstract interpretation* of *software verification* and it is a good start, I think it changes to the view of *optimization* and *computational geometry* after that.
 (After that, I think *neural network verification* has been transformed into an *optimization* problem with taking the advantage of *automatic differentiation* of modern deep learning frameworks like `Pytorch <https://pytorch.org/>`_ with GPU power.)
 Actually, I have finished the main part fo the first paper `ReLU Hull Approximation <https://dl.acm.org/doi/10.1145/3632917>`_ in my master's thesis and it is later accepted by POPL'24 in my PhD study.
 
@@ -170,11 +174,11 @@ and
 Also, affected by my supervisor, I read many books on sociology and philosophy, most of
 which involved communication, sociological research methods, and metaphysics.
 *This is really very important for me.*
-I believe in the metaphysics.
 
 My undergraduate thesis researched consumer perception using factor analysis and web
 crawling methods.
-This thesis is supervised by Prof. Shuyun Du, the head of our school.
+This thesis is supervised by Prof. `Shuyun Du <https://baike.baidu.com/item/%E6%9D%9C%E4%B9%A6%E4%BA%91/1401706>`_
+, the head of our school.
 I'm very grateful to complete such a thesis.
 
 In this period, I began to love research and I hoped to become a PhD.
