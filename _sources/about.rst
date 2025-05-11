@@ -31,11 +31,23 @@ My Study Life
 
 This is my third year of PhD study.
 My friend `Zihan Wang <https://www.zihan.com.au/>`_ and I published a paper called `Model Modulation with Logits Redistribution <https://www.zihan.com.au/assets/files/WWW25AIM.pdf>`_ on `WWW'25 <https://www2025.thewebconf.org/>`_. It's really a great honor for me to be a co-author of this paper.
-Disappointingly, I have not finished my software yet, but I have made some progress.
-I have published two small tools on GitHub, which are very important for my research.
-They are:
-`slimonnx <https://github.com/ZhongkuiMa/slimonnx>`_ and `torchonnx <https://github.com/ZhongkuiMa/torchonnx>`_.
-`slimonnx` is a tool for simplifying the ONNX model and `torchonnx` is a tool for converting onnx model to torch model. I think they are very stunning.
+
+Currently, I have not finished my software yet, but I have made some progress.
+I'm currently working on some exciting tools that I'm thrilled to share with you:
+
+- `shapeonnx <https://github.com/ZhongkuiMa/shapeonnx>`_: A tool to **infer the shape of an ONNX model** when the official tool is down. It's a simple yet powerful tool that helps you understand the dimensions of your model's inputs and outputs! 📏
+
+- `slimonnx <https://github.com/ZhongkuiMa/slimonnx>`_: A tool to **optimize and simplify your ONNX models** by removing redundant operations and resolving version issues. It makes ONNX files cleaner, more efficient, and ready for action! 🚀
+
+- `torchonnx <https://github.com/ZhongkuiMa/torchonnx>`_: A tool for **converting ONNX models** to **PyTorch models** (``.pth`` for parameters, ``.py`` for structure). It's simple, lightweight, and designed for seamless model conversion 🔄.
+
+- `torchvnnlib <https://github.com/ZhongkuiMa/torchvnnlib>`_: A tool to **convert VNN-LIB files** (``.vnnlib``) to **PyTorch tensors** (``.pth`` files) for efficient neural network verification. Take full advantage of the PyTorch ecosystem! 🚀
+
+- `propdag <https://github.com/ZhongkuiMa/propdag>`_: A **bound propagation framework** for **neural network verification**. It supports any **DAG (Directed Acyclic Graph)** structure, covering both **feedforward** and **backward** propagation patterns for verification. This tool allows researchers to focus on their algorithms without worrying about complex computation graphs! 💪
+
+
+You can lean more about them in my `Github <https://github.com/ZhongkuiMa>`_.
+Please expect my software in recent future.
 
 
 2024

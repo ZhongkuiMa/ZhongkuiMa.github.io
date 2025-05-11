@@ -37,7 +37,6 @@ You can learn more about my work by the following links:
 :bdg-link-info:`ORCID <https://orcid.org/0000-0002-2392-3751>`,
 :bdg-link-info:`Semantic Scholar <https://www.semanticscholar.org/author/Zhongkui-Ma/2267035345>`.
 
-
 News
 ----
 .. raw:: html
@@ -125,6 +124,21 @@ News
   `Verifying Neural Networks by Approximating Convex Hulls.
   <https://link.springer.com/chapter/10.1007/978-981-99-7584-6_17>`_.
 
+
+Recent Small Interests on GitHub
+--------------------------------
+
+I'm currently working on some exciting tools that I'm thrilled to share with you:
+
+- `shapeonnx <https://github.com/ZhongkuiMa/shapeonnx>`_: A tool to **infer the shape of an ONNX model** when the official tool is down. It's a simple yet powerful tool that helps you understand the dimensions of your model's inputs and outputs! 📏
+
+- `slimonnx <https://github.com/ZhongkuiMa/slimonnx>`_: A tool to **optimize and simplify your ONNX models** by removing redundant operations and resolving version issues. It makes ONNX files cleaner, more efficient, and ready for action! 🚀
+
+- `torchonnx <https://github.com/ZhongkuiMa/torchonnx>`_: A tool for **converting ONNX models** to **PyTorch models** (``.pth`` for parameters, ``.py`` for structure). It's simple, lightweight, and designed for seamless model conversion 🔄.
+
+- `torchvnnlib <https://github.com/ZhongkuiMa/torchvnnlib>`_: A tool to **convert VNN-LIB files** (``.vnnlib``) to **PyTorch tensors** (``.pth`` files) for efficient neural network verification. Take full advantage of the PyTorch ecosystem! 🚀
+
+- `propdag <https://github.com/ZhongkuiMa/propdag>`_: A **bound propagation framework** for **neural network verification**. It supports any **DAG (Directed Acyclic Graph)** structure, covering both **feedforward** and **backward** propagation patterns for verification. This tool allows researchers to focus on their algorithms without worrying about complex computation graphs! 💪
 
 .. raw:: html
 
