@@ -1,44 +1,90 @@
-Home
-====
+.. raw:: html
 
-.. toctree::
-  :maxdepth: 1
-  :caption: Contents:
+    <style>
+    .main-title {
+        text-align: center;
+        font-size: 2.6em;
+        font-weight: bold;
+        margin-top: 0.5em;
+        margin-bottom: 0.1em;
+        letter-spacing: 1px;
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 1.3em;
+        color: #555;
+        margin-bottom: 1.5em;
+    }
+    .intro-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5em;
+        margin-bottom: 2em;
+        flex-wrap: wrap;
+    }
+    .intro-text {
+        max-width: 420px;
+        font-size: 1.1em;
+        line-height: 1.7;
+    }
+    .social-badges {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    .social-badges a {
+        margin: 0.3em 0.3em;
+        text-decoration: none;
+    }
+    </style>
 
-  about
-  publications
-  activity
-  blog
+.. raw:: html
 
+    <div class="main-title">Zhongkui Ma (马中奎)</div>
+    <div class="subtitle">PhD Student @ The University of Queensland</div>
+
+.. raw:: html
+
+    <div class="intro-grid">
 
 .. image:: imgs/personal_photo.png
   :alt: My personal photo
-  :height: 200px
+  :height: 180px
   :align: center
+  :class: intro-photo
 
+.. raw:: html
 
-About
------
+        <div class="intro-text">
+            Hi there! I'm <b>Zhongkui Ma</b>, currently diving deep into my PhD journey at
+            <a href="https://www.uq.edu.au/" target="_blank">the University of Queensland</a>.
+            I'm fortunate to be supervised by A/Prof.
+            <a href="https://baigd.github.io/" target="_blank">Guangdong Bai</a>.
+            <br>
+            Also, welcome to visit our lab,
+            <a href="https://uq-trust-lab.github.io/" target="_blank">TrustLab</a>.
+        </div>
+    </div>
 
-Hi there! I'm Zhongkui Ma (马中奎), currently diving deep into my PhD journey at
-`the University of Queensland <https://www.uq.edu.au/>`_.
-I'm fortunate to be supervised by A/Prof.
-`Guangdong Bai <https://baigd.github.io/>`__.
-Also, welcome to visit our lab,
-`TrustLab <https://uq-trust-lab.github.io/>`_.
+.. raw:: html
 
+    <div class="social-badges">
+        <a href="https://github.com/ZhongkuiMa" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+        <a href="https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ" target="_blank"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white"></a>
+        <a href="https://www.linkedin.com/in/zhongkui-ma-3276442a8/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+        <a href="https://www.researchgate.net/profile/Zhongkui_Ma" target="_blank"><img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white"></a>
+        <a href="https://orcid.org/0000-0002-2392-3751" target="_blank"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white"></a>
+        <a href="https://www.semanticscholar.org/author/Zhongkui-Ma/2267035345" target="_blank"><img src="https://img.shields.io/badge/Semantic%20Scholar-F7B538?style=for-the-badge&logo=semantic-scholar&logoColor=white"></a>
+    </div>
 
-You can learn more about my work by the following links:
+.. raw:: html
 
-:bdg-link-info:`GitHub <https://github.com/ZhongkuiMa>`,
-:bdg-link-info:`Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`,
-:bdg-link-info:`LinkedIn <https://www.linkedin.com/in/zhongkui-ma-3276442a8/>`,
-:bdg-link-info:`ResearchGate <https://www.researchgate.net/profile/Zhongkui_Ma>`,
-:bdg-link-info:`ORCID <https://orcid.org/0000-0002-2392-3751>`,
-:bdg-link-info:`Semantic Scholar <https://www.semanticscholar.org/author/Zhongkui-Ma/2267035345>`.
+    <hr>
 
 News
-----
+=====
+
 .. raw:: html
 
     <span class="rainbow-flash">
@@ -124,9 +170,8 @@ News
   `Verifying Neural Networks by Approximating Convex Hulls.
   <https://link.springer.com/chapter/10.1007/978-981-99-7584-6_17>`_.
 
-
 Recent Small Interests
-----------------------
+========================
 
 I'm currently working on some exciting tools that I'm thrilled to share with you:
 
@@ -142,14 +187,23 @@ I'm currently working on some exciting tools that I'm thrilled to share with you
 
 .. raw:: html
 
-    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=IyNqp7ajueQw8zaczGtQ8CW95BQzZwJ6upOKS9itN7U&cl=ffffff&w=a"
-    ></script>
+    <div style="text-align:center; margin-bottom:1.5em;">
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=IyNqp7ajueQw8zaczGtQ8CW95BQzZwJ6upOKS9itN7U&cl=ffffff&w=a"></script>
+        <div style="font-size:0.95em; color:#888; margin-top:0.5em;">
+            The above map shows the distribution of visitors to this website.<br>
+            This widget is provided by <a href="https://clustrmaps.com/" target="_blank">ClustrMaps</a>.
+        </div>
+    </div>
 
-The above map shows the distribution of visitors to this website.
-This widget is provided by `ClustrMaps <https://clustrmaps.com/>`_.
+.. toctree::
+  :maxdepth: 1
+  :caption: Contents:
+
+  about
+  publications
+  activity
+  blog
 
 .. * :ref:`genindex`
 .. * :ref:`modindex`
 .. * :ref:`search`
-
-

@@ -1,3 +1,17 @@
+.. raw:: html
+
+    <style>
+    .social-badges {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    .social-badges a {
+        margin: 0 0.2em;
+        text-decoration: none;
+    }
+    </style>
+
 .. image:: imgs/personal_photo.png
   :alt: My personal photo
   :height: 200px
@@ -17,11 +31,16 @@ I'm a one hundred percent math amateur, and I'm interested in various mathematic
 
 You can learn more about my work by the following links:
 
-:bdg-link-info:`Google Scholar <https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ>`,
-:bdg-link-info:`LinkedIn <https://www.linkedin.com/in/zhongkui-ma-3276442a8/>`,
-:bdg-link-info:`ResearchGate <https://www.researchgate.net/profile/Zhongkui_Ma>`,
-:bdg-link-info:`ORCID <https://orcid.org/0000-0002-2392-3751>`,
-:bdg-link-info:`Semantic Scholar <https://www.semanticscholar.org/author/Zhongkui-Ma/2267035345>`.
+.. raw:: html
+
+    <div class="social-badges">
+        <a href="https://github.com/ZhongkuiMa" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+        <a href="https://scholar.google.com.au/citations?user=r2Z7bCMAAAAJ" target="_blank"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white"></a>
+        <a href="https://www.linkedin.com/in/zhongkui-ma-3276442a8/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+        <a href="https://www.researchgate.net/profile/Zhongkui_Ma" target="_blank"><img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white"></a>
+        <a href="https://orcid.org/0000-0002-2392-3751" target="_blank"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white"></a>
+        <a href="https://www.semanticscholar.org/author/Zhongkui-Ma/2267035345" target="_blank"><img src="https://img.shields.io/badge/Semantic%20Scholar-F7B538?style=for-the-badge&logo=semantic-scholar&logoColor=white"></a>
+    </div>
 
 My Study Life
 ----------------------
